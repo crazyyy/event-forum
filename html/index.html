@@ -100,29 +100,76 @@
             <article class="speakers">
               <div class="inner">
                 <h2>Спикеры</h2>
-                <ul>
+                <ul class="bxslider">
                   <li>
-                    <img src="" alt="">
+                    <img src="img/speakers/speakers1.jpg" alt="">
                     <h5>Евгения Брагина</h5>
                     <p>генеральный директор, <a href="">учредитель Event Cube</a></p>
                   </li>
                   <li>
-                    <img src="" alt="">
+                    <img src="img/speakers/speakers2.jpg" alt="">
                     <h5>Данило Ланге</h5>
                     <p>генеральный директор<a href="">Louder</a></p>
                   </li>
                   <li>
-                    <img src="" alt="">
+                    <img src="img/speakers/speakers3.jpg" alt="">
                     <h5>Анна Антонова</h5>
                     <p>управлющий партнёр <a href="">Louder</a></p>
+                    <span class="tooltip">
+                      <table>
+                        <tr>
+                          <td>Компания:</td>
+                          <td>Должность:</td>
+                          <td>Город проживания/работы:</td>
+                        </tr>
+                        <tr>
+                          <td>Vok Dams</td>
+                          <td>Президент компании</td>
+                          <td>Берлин</td>
+                        </tr>
+                      </table>
+                      <h6>Интересные / важные факты о комании:</h6>
+                      <ul>
+                        <li>Агентство Vok Dams, основанное в 1975 году, входит в ТОП-5 событийных маркетинговых агентств в мире.</li>
+                        <li>3-е место в ТОП-50 event-агентств мира по версии журнала Special event.</li>
+                        <li>Основали единственный в мире интститут Live marketing в 2005 году.</li>
+                      </ul>
+                    </span><!-- tooltip -->
                   </li>
                   <li>
-                    <img src="" alt="">
+                    <img src="img/speakers/speakers4.jpg" alt="">
                     <h5>Александр Сафонов</h5>
                     <p>руководитель event-направления в СНГ <a href="">Oriflame Cosmetics</a></p>
                   </li>
                   <li>
-                    <img src="" alt="">
+                    <img src="img/speakers/speakers5.jpg" alt="">
+                    <h5>Людмила Терехова</h5>
+                    <p>руководитель департамента коммуникаций <a href="">M.Видео</a></p>
+                  </li>
+
+
+                  <li>
+                    <img src="img/speakers/speakers1.jpg" alt="">
+                    <h5>Евгения Брагина</h5>
+                    <p>генеральный директор, <a href="">учредитель Event Cube</a></p>
+                  </li>
+                  <li>
+                    <img src="img/speakers/speakers2.jpg" alt="">
+                    <h5>Данило Ланге</h5>
+                    <p>генеральный директор<a href="">Louder</a></p>
+                  </li>
+                  <li>
+                    <img src="img/speakers/speakers3.jpg" alt="">
+                    <h5>Анна Антонова</h5>
+                    <p>управлющий партнёр <a href="">Louder</a></p>
+                  </li>
+                  <li>
+                    <img src="img/speakers/speakers4.jpg" alt="">
+                    <h5>Александр Сафонов</h5>
+                    <p>руководитель event-направления в СНГ <a href="">Oriflame Cosmetics</a></p>
+                  </li>
+                  <li>
+                    <img src="img/speakers/speakers5.jpg" alt="">
                     <h5>Людмила Терехова</h5>
                     <p>руководитель департамента коммуникаций <a href="">M.Видео</a></p>
                   </li>
@@ -428,19 +475,31 @@
 </footer>
 <!-- /footer -->
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script>jQuery.browser = {};
-(function () {
-    jQuery.browser.msie = false;
-    jQuery.browser.version = 0;
-    if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
-        jQuery.browser.msie = true;
-        jQuery.browser.version = RegExp.$1;
-    }
-})();</script>
+    <script>
+    jQuery.browser = {};
+    (function () {
+        jQuery.browser.msie = false;
+        jQuery.browser.version = 0;
+        if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+            jQuery.browser.msie = true;
+            jQuery.browser.version = RegExp.$1;
+        }
+    })();
+    </script>
     <script type="text/javascript" src="js/jquery.hashchange.min.js"></script>
     <script type="text/javascript" src="js/jquery.easytabs.min.js"></script>
     <script>
       $('.how-it-was-tabs').easytabs();
+    </script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script>
+      $('.bxslider').bxSlider({
+          slideWidth: 200,
+          minSlides: 5,
+          maxSlides: 5,
+          slideMargin: 0,
+          pagerType: 'short',
+      });
     </script>
     <script type="text/javascript" src="js/scripts.js"></script>
 </body>

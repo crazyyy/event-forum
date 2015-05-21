@@ -507,6 +507,8 @@ header {
 .speakers {
   padding: 65px 0 45px;
 
+  text-align: center;
+
   background-color: #f02337;
   h2 {
     color: #fff;
@@ -525,11 +527,12 @@ header {
       padding: 0;
 
       text-align: center;
+
       color: #fff;
       img {
         width: 100%;
         height: 200px;
-        margin: 0 20px;
+        margin: 0 0 20px;
       }
       h5 {
         font-size: 14px;
@@ -540,15 +543,213 @@ header {
       p {
         font-size: 12px;
         line-height: 2;
-padding: 0 15px;
+
         margin: 0;
-        a{
+        padding: 0 15px;
+        a {
           color: #fff;
         }
       }
     }
   }
+  .bx-wrapper {
+    position: relative;
+
+    margin: 0 auto 15px;
+    padding: 0;
+
+    *zoom: 1;
+    img {
+      display: block;
+
+      max-width: 100%;
+    }
+    .bx-viewport {
+      left: -5px;
+      /*fix other elements on the page moving (on Chrome)*/
+
+      transform: translatez(0);
+
+      border: 0;
+    }
+    .bx-pager,
+    .bx-controls-auto {
+      position: absolute;
+      bottom: 5px;
+
+      width: 100%;
+    }
+    .bx-loading {
+      position: absolute;
+      z-index: 100;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+      min-height: 50px;
+
+      background: url(../img/bx_loader.gif) center center no-repeat #fff;
+    }
+    .bx-pager {
+      font-size: 12px;
+      font-weight: bold;
+
+      text-align: center;
+
+      color: #fff;
+      .bx-pager-item {
+        display: inline-block;
+
+        *zoom: 1;
+        *display: inline;
+      }
+      &.bx-default-pager {
+        a {
+          display: block;
+
+          width: 10px;
+          height: 10px;
+          margin: 0 5px;
+
+          text-indent: -9999px;
+
+          border-radius: 5px;
+          outline: 0;
+          background: #666;
+          &:hover,
+          &.active {
+            background: #000;
+          }
+        }
+      }
+    }
+    .bx-controls-auto {
+      .bx-controls-auto-item {
+        display: inline-block;
+
+        *zoom: 1;
+        *display: inline;
+      }
+    }
+    .bx-prev {
+      left: 0;
+
+      @include sprite($sprite-bx-pager-prev);
+    }
+    .bx-next {
+      right: 0;
+
+      @include sprite($sprite-bx-pager-next);
+    }
+    .bx-controls-direction {
+      a {
+        position: absolute;
+        z-index: 110;
+        top: 0;
+
+        text-indent: -9999px;
+
+        outline: 0;
+        &.disabled {
+          display: none;
+        }
+      }
+    }
+    .bx-controls-auto {
+      text-align: center;
+      .bx-start {
+        display: block;
+
+        width: 10px;
+        height: 11px;
+        margin: 0 3px;
+
+        text-indent: -9999px;
+
+        outline: 0;
+        background: url(../img/controls.png) -86px -11px no-repeat;
+        &:hover,
+        &.active {
+          background-position: -86px 0;
+        }
+      }
+      .bx-stop {
+        display: block;
+
+        width: 9px;
+        height: 11px;
+        margin: 0 3px;
+
+        text-indent: -9999px;
+
+        outline: 0;
+        background: url(../img/controls.png) -86px -44px no-repeat;
+        &:hover,
+        &.active {
+          background-position: -86px -33px;
+        }
+      }
+    }
+    .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+      width: 80%;
+
+      text-align: left;
+    }
+    .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+      right: 0;
+
+      width: 35px;
+    }
+    .bx-controls {
+      position: absolute;
+      top: -82px;
+      right: 0;
+
+      display: block;
+
+      width: 115px;
+      height: 23px;
+    }
+  }
+  .tooltip {
+    position: absolute;
+    z-index: 120;
+    top: 200px;
+    left: -300px;
+
+    display: block;
+
+    width: 800px;
+    padding: 45px 50px;
+
+    color: #000;
+    background-color: #fff;
+    table {
+      width: 100%;
+    }
+  }
+  .view-all {
+    font-size: 12px;
+    font-weight: bold;
+
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+  }
 }
+
+
+
+
+
+
+
+
+
 
 
 footer {
