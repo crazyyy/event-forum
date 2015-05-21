@@ -502,18 +502,16 @@
       });
     </script>
     <script type="text/javascript" src="js/jquery.qtip.min.js"></script>
-<script>
-  // Grab all elements with the class "hasTooltip"
-$('.bxslider li').each(function() { // Notice the .each() loop, discussed below
-    $(this).qtip({
-        content: {
-            text: $(this).children('span') // Use the "div" element next to this for the content
-        }
+    <script>
+      // Grab all elements with the class "hasTooltip"
+    $('.bxslider li').each(function() { // Notice the .each() loop, discussed below
+        $(this).qtip({
+            content: {
+                text: $(this).children('span') // Use the "div" element next to this for the content
+            }
+        });
     });
-});
-
-
-</script>
+    </script>
 
 
 

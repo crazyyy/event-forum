@@ -715,7 +715,6 @@ header {
   .tooltip {
     display: none;
   }
-
   .view-all {
     font-size: 12px;
     font-weight: bold;
@@ -729,7 +728,118 @@ header {
   }
 }
 @import '_qtip.scss';
+.targets {
+  padding: 68px 0 88px;
 
+  background-color: #fff;
+  h2 {
+    margin-bottom: 60px;
+
+    @extend .heading;
+  }
+  ul {
+    display: block;
+
+    @extend .inner;
+    @extend .clearfix;
+    li {
+      position: relative;
+
+      float: left;
+
+      width: 25%;
+      padding: 118px 15px 0;
+
+      text-align: center;
+
+      color: #000;
+      h5 {
+        font-size: 14px;
+        font-weight: 500;
+
+        margin: 0 0 15px;
+      }
+      p {
+        font-size: 12px;
+        line-height: 2.1;
+
+        margin: 0;
+      }
+      &:before,
+      &:after {
+        position: absolute;
+        left: 75px;
+
+        display: block;
+
+        content: '';
+      }
+      &:before {
+        z-index: 10;
+        top: 0;
+
+        display: block;
+
+        width: 90px;
+        height: 90px;
+
+        content: '';
+
+        border: 1px solid #c1c1c1;
+        border-radius: 50%;
+        background-color: transparent;
+      }
+      &:after {
+        font-size: 40px;
+
+        z-index: 15;
+        top: 26px;
+
+        width: 90px;
+
+        text-align: center;
+
+        color: #c1c1c1;
+
+        @extend .fa;
+      }
+      &:first-child {
+        &:after {
+          top: 30px;
+          content: '';
+        }
+      }
+      &:nth-child(2) {
+        &:after {
+          content: '';
+        }
+      }
+      &:nth-child(3) {
+        &:after {
+          content: '';
+        }
+      }
+      &:last-child {
+        &:after {
+          left: 79px;
+          content: '';
+        }
+      }
+      &:hover {
+        h5 {
+          color: #f02337;
+        }
+        &:before {
+          border-color: #f02337;
+          background-color: #f02337;
+        }
+        &:after {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
 
 
 
