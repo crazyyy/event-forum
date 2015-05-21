@@ -806,6 +806,7 @@ header {
       &:first-child {
         &:after {
           top: 30px;
+
           content: '';
         }
       }
@@ -822,6 +823,7 @@ header {
       &:last-child {
         &:after {
           left: 79px;
+
           content: '';
         }
       }
@@ -836,6 +838,58 @@ header {
         &:after {
           color: #fff;
         }
+      }
+    }
+  }
+}
+.participants {
+  padding: 55px 0 80px;
+
+  background-color: #f6f6f6;
+  h2 {
+    @extend .heading;
+  }
+  ul {
+    font-size: 0;
+
+    text-align: justify;
+
+    @extend .inner;
+    &:after {
+      display: inline-block;
+
+      width: 100%;
+
+      content: '';
+    }
+    li {
+      font-size: 16px;
+
+      position: relative;
+
+      display: inline-block;
+
+      width: 50%;
+      margin: 0 0 25px;
+      padding: 0 0 0 20px;
+
+      text-align: left;
+
+      color: #000;
+      &:before {
+        position: absolute;
+        top: 5px;
+        left: 0;
+
+        display: block;
+
+        width: 6px;
+        height: 6px;
+
+        content: '';
+
+        border-radius: 50%;
+        background-color: #e4374b;
       }
     }
   }
