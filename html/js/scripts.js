@@ -1,0 +1,1 @@
+$("table").delegate("td.input","mouseover mouseleave",function(e){$(this).parent().toggleClass("hover","mouseover"==e.type),$("colgroup").eq($(this).index()).toggleClass("hover","mouseover"==e.type)});

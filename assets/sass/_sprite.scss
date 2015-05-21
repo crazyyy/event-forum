@@ -11,22 +11,44 @@ $icon-home: x y offset_x offset_y width height total_width total_height image_pa
 At the bottom of this section, we provide information about the spritesheet itself
 $spritesheet: width height image $spritesheet-sprites;
 */
-$sprite-logo-name: 'sprite-logo';
-$sprite-logo-x: 0px;
-$sprite-logo-y: 0px;
-$sprite-logo-offset-x: 0px;
-$sprite-logo-offset-y: 0px;
-$sprite-logo-width: 512px;
-$sprite-logo-height: 512px;
-$sprite-logo-total-width: 512px;
-$sprite-logo-total-height: 512px;
-$sprite-logo-image: '../img/sprite.png';
-$sprite-logo: 0px 0px 0px 0px 512px 512px 512px 512px '../img/sprite.png' 'sprite-logo';
-$spritesheet-width: 512px;
-$spritesheet-height: 512px;
+$sprite-ico-apple-name: 'sprite-ico-apple';
+$sprite-ico-apple-x: 0px;
+$sprite-ico-apple-y: 0px;
+$sprite-ico-apple-offset-x: 0px;
+$sprite-ico-apple-offset-y: 0px;
+$sprite-ico-apple-width: 141px;
+$sprite-ico-apple-height: 46px;
+$sprite-ico-apple-total-width: 141px;
+$sprite-ico-apple-total-height: 138px;
+$sprite-ico-apple-image: '../img/sprite.png';
+$sprite-ico-apple: (0px, 0px, 0px, 0px, 141px, 46px, 141px, 138px, '../img/sprite.png', 'sprite-ico-apple', );
+$sprite-ico-google-name: 'sprite-ico-google';
+$sprite-ico-google-x: 0px;
+$sprite-ico-google-y: 46px;
+$sprite-ico-google-offset-x: 0px;
+$sprite-ico-google-offset-y: -46px;
+$sprite-ico-google-width: 141px;
+$sprite-ico-google-height: 46px;
+$sprite-ico-google-total-width: 141px;
+$sprite-ico-google-total-height: 138px;
+$sprite-ico-google-image: '../img/sprite.png';
+$sprite-ico-google: (0px, 46px, 0px, -46px, 141px, 46px, 141px, 138px, '../img/sprite.png', 'sprite-ico-google', );
+$sprite-ico-insta-name: 'sprite-ico-insta';
+$sprite-ico-insta-x: 0px;
+$sprite-ico-insta-y: 92px;
+$sprite-ico-insta-offset-x: 0px;
+$sprite-ico-insta-offset-y: -92px;
+$sprite-ico-insta-width: 141px;
+$sprite-ico-insta-height: 46px;
+$sprite-ico-insta-total-width: 141px;
+$sprite-ico-insta-total-height: 138px;
+$sprite-ico-insta-image: '../img/sprite.png';
+$sprite-ico-insta: (0px, 92px, 0px, -92px, 141px, 46px, 141px, 138px, '../img/sprite.png', 'sprite-ico-insta', );
+$spritesheet-width: 141px;
+$spritesheet-height: 138px;
 $spritesheet-image: '../img/sprite.png';
-$spritesheet-sprites: $sprite-logo;
-$spritesheet: 512px 512px '../img/sprite.png' $spritesheet-sprites;
+$spritesheet-sprites: ($sprite-ico-apple, $sprite-ico-google, $sprite-ico-insta, );
+$spritesheet: (141px, 138px, '../img/sprite.png', $spritesheet-sprites, );
 
 /*
 The provided mixins are intended to be used with the array-like variables
