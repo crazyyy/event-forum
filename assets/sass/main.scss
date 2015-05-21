@@ -713,22 +713,9 @@ header {
     }
   }
   .tooltip {
-    position: absolute;
-    z-index: 120;
-    top: 200px;
-    left: -300px;
-
-    display: block;
-
-    width: 800px;
-    padding: 45px 50px;
-
-    color: #000;
-    background-color: #fff;
-    table {
-      width: 100%;
-    }
+    display: none;
   }
+
   .view-all {
     font-size: 12px;
     font-weight: bold;
@@ -741,7 +728,7 @@ header {
     border-bottom: 1px dotted #fff;
   }
 }
-
+@import '_qtip.scss';
 
 
 
