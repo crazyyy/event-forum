@@ -23,10 +23,19 @@
       <div class="inner">
         <div class="logo">
             <img src="img/logo.png" alt="-" title="-" class="logo-img">
+            <img src="img/logo-320.png" alt="-" title="-" class="logo-img-320">
         </div>
         <!-- /logo -->
         <nav id="nav" role="navigation">
           <ul class="nav navbar-nav">
+            <li><a href="#about">О ФОРУМЕ</a></li>
+            <li><a href="#programm">ПРОГРАММА</a></li>
+            <li><a href="#speakers">СПИКЕРЫ</a></li>
+            <li><a href="#partners">ПАРТНЕРЫ</a></li>
+            <li><a href="#price">СТОИМОСТЬ И УЧАСТИЕ</a></li>
+            <li><a href="#contacts">КОНТАКТЫ</a></li>
+          </ul>
+          <ul class="nav-320">
             <li><a href="#about">О ФОРУМЕ</a></li>
             <li><a href="#programm">ПРОГРАММА</a></li>
             <li><a href="#speakers">СПИКЕРЫ</a></li>
@@ -182,20 +191,20 @@
 
             <article class="targets">
               <h2>Цели форума</h2>
-              <ul>
-                <li>
+              <ul class="targets-sliders">
+                <li class="targets-sliders-1">
                   <h5>Вдохновение</h5>
                   <p>Вы почерпнете множество свежих, креативных идей для будущих проектов</p>
                 </li>
-                <li>
+                <li class="targets-sliders-2">
                   <h5>Расширение базы контактов</h5>
                   <p>Существенно расширите сеть полезных контактов: потенциальных Клиентов, партнеров, единомышленников</p>
                 </li>
-                <li>
+                <li class="targets-sliders-3">
                   <h5>Сотрудничество</h5>
                   <p>Global Event.ru Forum – важный шаг к оптимизации диалога Клиент-Агентство-Подрядчик и установления партнерских отношений между всеми участниками event-рынка</p>
                 </li>
-                <li>
+                <li class="targets-sliders-4">
                   <h5>Развитие</h5>
                   <p>Global Event.ru Forum — образовательная площадка, призванная развить event-индустрию и вывести ее на новый уровень</p>
                 </li>
@@ -327,6 +336,63 @@
                   <td class="collgroupe-6 checked"></td>
                 </tr>
               </table>
+              <ul class="price-320">
+                <li>
+                  <div>Хочу знать</div>
+                  <div>15 000 Р</div>
+                  <div class="checked">День 1 — теория</div>
+                  <div class="checked">День 2 — практика</div>
+                  <div>Вечеринка Event.ru</div>
+                  <div>День 3 — семинары/лекции</div>
+                  <div>Места в первых рядах</div>
+                  <div>Участие в закрытом ужине</div>
+                  <div>Личный ассистент</div>
+                </li>
+                <li>
+                  <div>Хочу знать и веселиться</div>
+                  <div>19 500 Р</div>
+                  <div class="checked">День 1 — теория</div>
+                  <div class="checked">День 2 — практика</div>
+                  <div class="checked">Вечеринка Event.ru</div>
+                  <div>День 3 — семинары/лекции</div>
+                  <div>Места в первых рядах</div>
+                  <div>Участие в закрытом ужине</div>
+                  <div>Личный ассистент</div>
+                </li>
+                <li>
+                  <div>Хочу всё знать</div>
+                  <div>24 500 Р</div>
+                  <div class="checked">День 1 — теория</div>
+                  <div class="checked">День 2 — практика</div>
+                  <div>Вечеринка Event.ru</div>
+                  <div class="checked">День 3 — семинары/лекции</div>
+                  <div>Места в первых рядах</div>
+                  <div>Участие в закрытом ужине</div>
+                  <div>Личный ассистент</div>
+                </li>
+                <li>
+                  <div>Хочу всё знать и веселиться</div>
+                  <div>29 500 Р</div>
+                  <div class="checked">День 1 — теория</div>
+                  <div class="checked">День 2 — практика</div>
+                  <div class="checked">Вечеринка Event.ru</div>
+                  <div class="checked">День 3 — семинары/лекции</div>
+                  <div class="checked">Места в первых рядах</div>
+                  <div>Участие в закрытом ужине</div>
+                  <div>Личный ассистент</div>
+                </li>
+                <li>
+                  <div>Хочу всё</div>
+                  <div>74 500 Р</div>
+                  <div class="checked">День 1 — теория</div>
+                  <div class="checked">День 2 — практика</div>
+                  <div class="checked">Вечеринка Event.ru</div>
+                  <div class="checked">День 3 — семинары/лекции</div>
+                  <div class="checked">Места в первых рядах</div>
+                  <div class="checked">Участие в закрытом ужине</div>
+                  <div class="checked">Личный ассистент</div>
+                </li>
+              </ul>
               <a href="#" class="buy-ticket">Купить билет</a>
             </article><!-- price -->
 
@@ -794,18 +860,10 @@
 </footer>
 <!-- /footer -->
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
     <script>
-      var winHeight = $( window ).height(),
-        firstWindow = $('.headliner');
-        winHeight = winHeight - 343 - 100;
-        firstWindow.height(winHeight);
-    </script>
-    <script>
-$(".buy-ticket").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#price").offset().top
-    }, 2000);
-});
+
+
     </script>
     <script>
       jQuery.browser = {};
@@ -824,8 +882,70 @@ $(".buy-ticket").click(function() {
       $('.how-it-was-tabs').easytabs();
       $('.programm-tabs').easytabs();
     </script>
-    <script src="js/jquery.bxslider.min.js"></script>
+<!-- load on 341+ -->
+<script type="text/javascript" src="js/jquery.qtip.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.stickyNavbar.min.js"></script>
+<script type="text/javascript" src="js/easybox.min.js"></script>
+<!-- load on 341+ -->
+
+
     <script>
+    $(document).ready(function() {
+        if($(window).width() >= 341) {
+
+
+      // resize first block to window screen
+      var winHeight = $( window ).height(),
+        firstWindow = $('.headliner');
+        winHeight = winHeight - 343 - 100;
+        firstWindow.height(winHeight);
+
+    // view all spekers
+      var viewButton = $('#speakers .view-all'),
+        carousellBlock = $('#speakers .bx-wrapper');
+        $(function() {
+          viewButton.click(function() {
+            carousellBlock.toggleClass( "bx-wrapper-disabled", 1000 );
+            viewButton.toggleClass( "view-all hide-all", 1000 );
+          });
+        });
+
+      // Grab all elements with the class "hasTooltip"
+      $('.bxslider li').each(function() { // Notice the .each() loop, discussed below
+          $(this).qtip({
+              content: {
+                  text: $(this).children('span') // Use the "div" element next to this for the content
+              },
+                  position: {
+          my: 'center center',  // Position my top left...
+          at: 'center center'
+      }
+          });
+      });
+
+      // sticky navbar
+      $(function () {
+          $('.header').stickyNavbar({
+          activeClass: "active",          // Class to be added to highlight nav elements
+          sectionSelector: "scrollto",    // Class of the section that is interconnected with nav links
+          animDuration: 750,              // Duration of jQuery animation
+          startAt: 0,                     // Stick the menu at XXXpx from the top of the this() (nav container)
+          easing: "linear",               // Easing type if jqueryEffects = true, use jQuery Easing plugin to extend easing types - gsgd.co.uk/sandbox/jquery/easing
+          animateCSS: true,               // AnimateCSS effect on/off
+          animateCSSRepeat: false,        // Repeat animation everytime user scrolls
+          cssAnimation: "fadeInDown",     // AnimateCSS class that will be added to selector
+          jqueryEffects: false,           // jQuery animation on/off
+          jqueryAnim: "slideDown",        // jQuery animation type: fadeIn, show or slideDown
+          selector: "a",                  // Selector to which activeClass will be added, either "a" or "li"
+          mobile: false,                  // If false nav will not stick under 480px width of window
+          mobileWidth: 480,               // The viewport width (without scrollbar) under which stickyNavbar will not be applied (due usability on mobile devices)
+          zindex: 9999,                   // The zindex value to apply to the element: default 9999, other option is "auto"
+          stickyModeClass: "sticky",      // Class that will be applied to 'this' in sticky mode
+          unstickyModeClass: "unsticky"   // Class that will be applied to 'this' in non-sticky mode
+        });
+      });
+
       $('.bxslider').bxSlider({
           slideWidth: 200,
           minSlides: 5,
@@ -833,6 +953,7 @@ $(".buy-ticket").click(function() {
           slideMargin: 0,
           pagerType: 'short',
       });
+
       $('.reviews-slider').bxSlider({
           slideWidth: 1000,
           minSlides: 1,
@@ -840,33 +961,61 @@ $(".buy-ticket").click(function() {
           slideMargin: 0,
           pagerType: 'short',
       });
-    </script>
-    <script>
-    var viewButton = $('#speakers .view-all'),
-      carousellBlock = $('#speakers .bx-wrapper');
 
-      $(function() {
-        viewButton.click(function() {
-          carousellBlock.toggleClass( "bx-wrapper-disabled", 1000 );
-          viewButton.toggleClass( "view-all hide-all", 1000 );
+        }
+    });
+
+    </script>
+
+    <script>
+    $(document).ready(function() {
+        if($(window).width() <= 340) {
+
+        $('.bxslider').bxSlider({
+            slideWidth: 200,
+            minSlides: 1,
+            maxSlides: 1,
+            slideMargin: 0,
+            pagerType: 'short',
         });
+
+
+        $('.targets-sliders').bxSlider({
+            slideWidth: 240,
+            minSlides: 1,
+            maxSlides: 1,
+            slideMargin: 0,
+            pagerType: 'short',
+        });
+
+        $('.reviews-slider').bxSlider({
+            slideWidth: 240,
+            minSlides: 1,
+            maxSlides: 1,
+            slideMargin: 0,
+            pagerType: 'short',
+        });
+
+        $('.price-320').bxSlider({
+            slideWidth: 240,
+            minSlides: 1,
+            maxSlides: 1,
+            slideMargin: 0,
+            pagerType: 'short',
+        });
+
+
+        }
+    });
+  </script>
+    <script>
+      $(".buy-ticket").click(function() {
+          $('html, body').animate({
+              scrollTop: $("#price").offset().top
+          }, 2000);
       });
     </script>
-    <script type="text/javascript" src="js/jquery.qtip.min.js"></script>
-    <script>
-      // Grab all elements with the class "hasTooltip"
-    $('.bxslider li').each(function() { // Notice the .each() loop, discussed below
-        $(this).qtip({
-            content: {
-                text: $(this).children('span') // Use the "div" element next to this for the content
-            },
-                position: {
-        my: 'center center',  // Position my top left...
-        at: 'center center'
-    }
-        });
-    });
-    </script>
+
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=ru"></script>
     <script type="text/javascript">
       ///////////////////////////////////////////////////////////////////
@@ -894,37 +1043,6 @@ $(".buy-ticket").click(function() {
         });
       }
     </script>
-
-
-    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
-    <script type="text/javascript" src="js/jquery.stickyNavbar.min.js"></script>
-    <script>
-      $(function () {
-          $('.header').stickyNavbar({
-          activeClass: "active",          // Class to be added to highlight nav elements
-          sectionSelector: "scrollto",    // Class of the section that is interconnected with nav links
-          animDuration: 750,              // Duration of jQuery animation
-          startAt: 0,                     // Stick the menu at XXXpx from the top of the this() (nav container)
-          easing: "linear",               // Easing type if jqueryEffects = true, use jQuery Easing plugin to extend easing types - gsgd.co.uk/sandbox/jquery/easing
-          animateCSS: true,               // AnimateCSS effect on/off
-          animateCSSRepeat: false,        // Repeat animation everytime user scrolls
-          cssAnimation: "fadeInDown",     // AnimateCSS class that will be added to selector
-          jqueryEffects: false,           // jQuery animation on/off
-          jqueryAnim: "slideDown",        // jQuery animation type: fadeIn, show or slideDown
-          selector: "a",                  // Selector to which activeClass will be added, either "a" or "li"
-          mobile: false,                  // If false nav will not stick under 480px width of window
-          mobileWidth: 480,               // The viewport width (without scrollbar) under which stickyNavbar will not be applied (due usability on mobile devices)
-          zindex: 9999,                   // The zindex value to apply to the element: default 9999, other option is "auto"
-          stickyModeClass: "sticky",      // Class that will be applied to 'this' in sticky mode
-          unstickyModeClass: "unsticky"   // Class that will be applied to 'this' in non-sticky mode
-        });
-      });
-    </script>
-
-
-    <script type="text/javascript" src="js/easybox.min.js"></script>
-
-
 
     <script type="text/javascript" src="js/scripts.js"></script>
 
