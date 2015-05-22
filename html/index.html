@@ -11,6 +11,7 @@
   <!-- icons -->
   <link href="favicon.ico" rel="shortcut icon">
   <!-- css + javascript -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/main.css" media="all">
   <script type="text/javascript" src="///cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
@@ -24,14 +25,14 @@
             <img src="img/logo.png" alt="-" title="-" class="logo-img">
         </div>
         <!-- /logo -->
-        <nav class="nav" role="navigation">
-          <ul>
-            <li><a class="active" href="">О ФОРУМЕ</a></li>
-            <li><a href="">ПРОГРАММА</a></li>
-            <li><a href="">СПИКЕРЫ</a></li>
-            <li><a href="">ПАРТНЕРЫ</a></li>
-            <li><a href="">СТОИМОСТЬ И УЧАСТИЕ</a></li>
-            <li><a href="">КОНТАКТЫ</a></li>
+        <nav id="nav" role="navigation">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">О ФОРУМЕ</a></li>
+            <li><a href="#programm">ПРОГРАММА</a></li>
+            <li><a href="#speakers">СПИКЕРЫ</a></li>
+            <li><a href="#partners">ПАРТНЕРЫ</a></li>
+            <li><a href="#price">СТОИМОСТЬ И УЧАСТИЕ</a></li>
+            <li><a href="#contacts">КОНТАКТЫ</a></li>
           </ul>
         </nav>
         <!-- /nav -->
@@ -43,7 +44,7 @@
         <!-- section -->
         <section role="main">
 
-            <article class="headliner">
+            <article id="about" class="headliner scrollto">
               <h6><i class="fa fa-map-marker"></i>17-19 сентября, Санкт-Петербург</h6>
               <p>Уникальная площадка для общения организаторов и заказчиков. Креативная среда для рождения новых идей. Практика и теория организации мероприятий.</p>
               <a href="#" class="buy-ticket">Купить билет</a>
@@ -94,10 +95,10 @@
             </article><!-- /.how-it-was -->
 
             <article class="video-block">
-                <a href="#" class="yt-video"><img src="img/yt-video.jpg" alt=""></a>
+              <a href="https://www.youtube.com/watch?v=fP4lh4G4obE" class="lightbox yt-video"><img src="img/yt-video.jpg" alt=""></a>
             </article><!-- /.video-block -->
 
-            <article class="speakers">
+            <article id="speakers" class="speakers scrollto">
               <div class="inner">
                 <h2>Спикеры</h2>
                 <ul class="bxslider">
@@ -174,7 +175,7 @@
                     <p>руководитель департамента коммуникаций <a href="">M.Видео</a></p>
                   </li>
                 </ul>
-                <a href="#" class="view-all">Показать всех</a>
+                <span class="view-all"><span class="view">Показать всех</span><span class="hide">Спрятать</span></span>
               </div>
             </article>
             <!-- /.speakers -->
@@ -242,7 +243,7 @@
               </div>
             </article><!-- /.reviews -->
 
-            <article class="price">
+            <article id="price" class="price scrollto">
               <h2>Стоимость участия</h2>
               <table>
                 <tr>
@@ -329,7 +330,7 @@
               <a href="#" class="buy-ticket">Купить билет</a>
             </article><!-- price -->
 
-            <article class="programm">
+            <article id="programm" class="programm scrollto">
               <div class="inner programm-tabs">
                 <h2>Программа</h2>
                 <ul class="etabs">
@@ -431,14 +432,18 @@
                     <img src="img/organizators/organizators-1.jpg" alt="">
                   </td>
                   <td>
-                    <h4>Журнал Event.ru</h4>
-                    <p>печатное профессиональное издание для специалистов в области event-маркетинга, существует с 2006 года, тираж 5000, 120 полос, переодичность: 6 номеров в год</p>
+                    <a href="#">
+                      <h4>Журнал Event.ru</h4>
+                      <p>печатное профессиональное издание для специалистов в области event-маркетинга, существует с 2006 года, тираж 5000, 120 полос, переодичность: 6 номеров в год</p>
+                    </a>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <h4>Портал Event.ru</h4>
-                    <p>информационный портал для event-специалистов, перезапущен в начале 2013 года</p>
+                    <a href="#">
+                      <h4>Портал Event.ru</h4>
+                      <p>информационный портал для event-специалистов, перезапущен в начале 2013 года</p>
+                    </a>
                   </td>
                   <td>
                     <img src="img/organizators/organizators-2.jpg" alt="">
@@ -449,14 +454,18 @@
                     <img src="img/organizators/organizators-3.jpg" alt="">
                   </td>
                   <td>
-                    <h4>Информационный портал EventCatalog.ru</h4>
-                    <p>профессиональный каталог event-компаний, открыт в 2005 году</p>
+                    <a href="#">
+                      <h4>Информационный портал EventCatalog.ru</h4>
+                      <p>профессиональный каталог event-компаний, открыт в 2005 году</p>
+                    </a>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <h4>Событие года</h4>
-                    <p>главная Event премия России</p>
+                    <a href="#">
+                      <h4>Событие года</h4>
+                      <p>главная Event премия России</p>
+                    </a>
                   </td>
                   <td>
                     <img src="img/organizators/organizators-4.jpg" alt="">
@@ -465,7 +474,7 @@
               </table>
             </article><!-- /.organizators -->
 
-            <article class="partners">
+            <article id="partners" class="partners scrollto">
               <h2>Партнёры</h2>
               <h5>Спонсоры</h5>
               <ul class="partner-sponsors">
@@ -747,7 +756,7 @@
               <div id="MyGmaps"></div>
             </article><!-- /.maps -->
 
-            <article class="contacts">
+            <article id="contacts" class="contacts scrollto">
               <ul>
                 <li>
                   <h4>Программа форума и партнерство:</h4>
@@ -786,15 +795,28 @@
 <!-- /footer -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script>
-    jQuery.browser = {};
-    (function () {
-        jQuery.browser.msie = false;
-        jQuery.browser.version = 0;
-        if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
-            jQuery.browser.msie = true;
-            jQuery.browser.version = RegExp.$1;
-        }
-    })();
+      var winHeight = $( window ).height(),
+        firstWindow = $('.headliner');
+        winHeight = winHeight - 343 - 100;
+        firstWindow.height(winHeight);
+    </script>
+    <script>
+$(".buy-ticket").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#price").offset().top
+    }, 2000);
+});
+    </script>
+    <script>
+      jQuery.browser = {};
+      (function () {
+          jQuery.browser.msie = false;
+          jQuery.browser.version = 0;
+          if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+              jQuery.browser.msie = true;
+              jQuery.browser.version = RegExp.$1;
+          }
+      })();
     </script>
     <script type="text/javascript" src="js/jquery.hashchange.min.js"></script>
     <script type="text/javascript" src="js/jquery.easytabs.min.js"></script>
@@ -819,6 +841,17 @@
           pagerType: 'short',
       });
     </script>
+    <script>
+    var viewButton = $('#speakers .view-all'),
+      carousellBlock = $('#speakers .bx-wrapper');
+
+      $(function() {
+        viewButton.click(function() {
+          carousellBlock.toggleClass( "bx-wrapper-disabled", 1000 );
+          viewButton.toggleClass( "view-all hide-all", 1000 );
+        });
+      });
+    </script>
     <script type="text/javascript" src="js/jquery.qtip.min.js"></script>
     <script>
       // Grab all elements with the class "hasTooltip"
@@ -826,7 +859,11 @@
         $(this).qtip({
             content: {
                 text: $(this).children('span') // Use the "div" element next to this for the content
-            }
+            },
+                position: {
+        my: 'center center',  // Position my top left...
+        at: 'center center'
+    }
         });
     });
     </script>
@@ -859,6 +896,37 @@
     </script>
 
 
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/jquery.stickyNavbar.min.js"></script>
+    <script>
+      $(function () {
+          $('.header').stickyNavbar({
+          activeClass: "active",          // Class to be added to highlight nav elements
+          sectionSelector: "scrollto",    // Class of the section that is interconnected with nav links
+          animDuration: 750,              // Duration of jQuery animation
+          startAt: 0,                     // Stick the menu at XXXpx from the top of the this() (nav container)
+          easing: "linear",               // Easing type if jqueryEffects = true, use jQuery Easing plugin to extend easing types - gsgd.co.uk/sandbox/jquery/easing
+          animateCSS: true,               // AnimateCSS effect on/off
+          animateCSSRepeat: false,        // Repeat animation everytime user scrolls
+          cssAnimation: "fadeInDown",     // AnimateCSS class that will be added to selector
+          jqueryEffects: false,           // jQuery animation on/off
+          jqueryAnim: "slideDown",        // jQuery animation type: fadeIn, show or slideDown
+          selector: "a",                  // Selector to which activeClass will be added, either "a" or "li"
+          mobile: false,                  // If false nav will not stick under 480px width of window
+          mobileWidth: 480,               // The viewport width (without scrollbar) under which stickyNavbar will not be applied (due usability on mobile devices)
+          zindex: 9999,                   // The zindex value to apply to the element: default 9999, other option is "auto"
+          stickyModeClass: "sticky",      // Class that will be applied to 'this' in sticky mode
+          unstickyModeClass: "unsticky"   // Class that will be applied to 'this' in non-sticky mode
+        });
+      });
+    </script>
+
+
+    <script type="text/javascript" src="js/easybox.min.js"></script>
+
+
+
     <script type="text/javascript" src="js/scripts.js"></script>
+
 </body>
 </html>

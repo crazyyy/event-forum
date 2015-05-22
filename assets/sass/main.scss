@@ -6,6 +6,7 @@
 @import '_font_gothapro.scss';
 @import '_sprite.scss';
 @import '_mixin.scss';
+@import '_easybox.scss';
 $width: 1000px;
 $footer: 350px;
 $footer_margin: $footer - 2 * $footer;
@@ -93,6 +94,9 @@ a {
 
 
 header {
+  width: 100%;
+  height: 75px;
+
   background-color: #181b2c;
   .logo {
     position: absolute;
@@ -113,14 +117,12 @@ header {
 
     position: absolute;
     z-index: 10;
-    top: 33px;
+    top: 18px;
     right: -50px;
 
     width: 700px;
 
     text-align: justify;
-
-    background-color: red;
     ul {
       font-size: 0;
 
@@ -157,6 +159,8 @@ header {
       color: #fff;
       &:hover,
       &.active {
+        transform: translate3d(0, 0, 0);
+
         color: #f02337;
       }
     }
@@ -270,17 +274,17 @@ header {
   }
   .soft-1 {
     a {
-      @include sprite($sprite-ico-apple);
+      background-image: url(../img/bg/ico-apple.png);
     }
   }
   .soft-2 {
     a {
-      @include sprite($sprite-ico-google);
+      background-image: url(../img/bg/ico-google.png);
     }
   }
   .soft-3 {
     a {
-      @include sprite($sprite-ico-insta);
+      background-image: url(../img/bg/ico-insta.png);
     }
   }
 }
@@ -715,16 +719,49 @@ header {
   .tooltip {
     display: none;
   }
-  .view-all {
+  .view-all,
+  .hide-all {
     font-size: 12px;
     font-weight: bold;
 
+    cursor: pointer;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
 
     color: #fff;
     border-bottom: 1px dotted #fff;
+  }
+  .view-all {
+    .view {
+      display: inline;
+    }
+    .hide {
+      display: none;
+    }
+  }
+  .hide-all {
+    .view {
+      display: none;
+    }
+    .hide {
+      display: inline;
+    }
+  }
+  .bx-wrapper-disabled {
+    .bx-viewport {
+      overflow: auto !important;
+
+      height: auto !important;
+      .bxslider {
+        width: 1000px !important;
+
+        transform: none !important;
+      }
+    }
+    .bx-controls {
+      display: none !important;
+    }
   }
 }
 @import '_qtip.scss';
@@ -1353,7 +1390,7 @@ header {
       td {
         width: 50%;
         padding: 0;
-
+overflow: hidden;
         text-align: center;
         vertical-align: middle;
 
@@ -1362,6 +1399,8 @@ header {
         img {
           width: 100%;
           height: 350px;
+
+          transition: all 0.7s;
         }
         h4 {
           font-size: 18px;
@@ -1379,6 +1418,17 @@ header {
           margin: 0 70px;
 
           color: #000;
+        }
+        a {
+          text-decoration: none;
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &:hover {
+        img {
+          transform: scale(1.3);
         }
       }
     }
@@ -1623,11 +1673,12 @@ header {
       }
       p {
         font-size: 14px;
-        line-height: 1.5;
         font-weight: normal;
+        line-height: 1.5;
         a {
-          color: #fff;
           text-decoration: none;
+
+          color: #fff;
         }
       }
       &:last-child {
@@ -1704,11 +1755,134 @@ footer {
 
       border-color: #fff;
       &:hover {
-        background-color: #fff;
         color: #f02337;
+        background-color: #fff;
       }
     }
   }
 }
 
 @import '_print.scss';
+
+
+
+
+
+
+
+.qtip {
+  position: absolute;
+  top: -28000px;
+  left: -28000px;
+
+  display: none;
+
+  min-width: 50px;
+
+  box-shadow: none;
+
+  direction: ltr;
+}
+.qtip-content {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 5px 9px;
+
+  text-align: left;
+  word-wrap: break-word;
+}
+.qtip-titlebar {
+  font-weight: 700;
+
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 5px 35px 5px 10px;
+
+  border-width: 0 0 1px;
+  + .qtip-content {
+    border-top-width: 0 !important;
+  }
+  .qtip-close {
+    top: 50%;
+    right: 4px;
+
+    margin-top: -9px;
+  }
+  .ui-icon {
+    display: block;
+
+    text-indent: -1000em;
+
+    direction: ltr;
+  }
+}
+.qtip-close {
+  position: absolute;
+  z-index: 11;
+  top: -9px;
+  right: -9px;
+
+  cursor: pointer;
+
+  border: 1px solid transparent;
+  outline: medium none;
+}
+* html .qtip-titlebar .qtip-close {
+  top: 16px;
+}
+.qtip-icon {
+  text-decoration: none;
+
+  border-radius: 3px;
+  .ui-icon {
+    font: 400 bold 10px/13px Tahoma,sans-serif;
+    line-height: 14px;
+
+    display: block;
+
+    width: 18px;
+    height: 14px;
+
+    text-align: center;
+    text-decoration: none;
+    text-indent: -1000em;
+    text-indent: 0;
+
+    color: inherit;
+    border-radius: 3px;
+    background: transparent none no-repeat -100em -100em;
+
+    direction: ltr;
+  }
+}
+.qtip-default {
+  width: 800px;
+  padding: 45px 50px;
+
+  color: #000;
+  background-color: #fff;
+  /* z-index: 15001 !important;
+top: 2880px !important;
+left: 831px !important;
+display: block !important;
+opacity: 1 !important; */
+  table {
+    width: 100%;
+  }
+  .qtip-titlebar {
+    background-color: #ffef93;
+  }
+  .qtip-icon {
+    color: #777;
+    border-color: #ccc;
+    background: #f1f1f1;
+  }
+  .qtip-titlebar .qtip-close {
+    color: #111;
+    border-color: #aaa;
+  }
+}
