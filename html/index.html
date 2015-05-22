@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/main.css" media="all">
   <script type="text/javascript" src="///cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
-<body>
+<body onload="LoadGmaps()" onunload="GUnload()">
 <!-- wrapper -->
 <div class="wrapper clearfix">
     <!-- header -->
@@ -339,52 +339,88 @@
                 </ul>
 
                 <div class="programm-tabs-day-1" id="day-1">
-Тендеры. Правила проведения и секреты успеха
-   Мировая экспертиза vs российская действительность
-   Интервью с руководителями отдела закупок
-   крупнейших компаний — заказчиков: event в закупке,
-   креатив vs смета
-   Презентация нового инновационного инструмента для
-   подготовки брифа
-
-   Городской event – программа 2015/2016
-   Экспертная сессия с представителями городских
-   администраций и Департамента Культуры г. Москвы и РФ
-
-
-   Cоциальный event – новый тренд бизнеса
-   Панельная дискуссия с организатора крупнейших
-   КСО-кампаний
-
-   Эффективный event: миф или реальность?!
-   Слово клиенту
-   Роль event’а в развитии бизнеса
-   Как выбрать правильного партнера
-   Как отстоять бюджет
-   Слово агентству
-   Основные правила общения с Клиентом
-   Равноправное партнерство – залог качественной работы
-   и успешного результата – стратегия, в которой нет
-   проигравших
+                  <h4>Тендеры. Правила проведения и секреты успеха</h4>
+                  <ul>
+                    <li>Мировая экспертиза vs российская действительность</li>
+                    <li>Интервью с руководителями отдела закупок крупнейших компаний — заказчиков: event в закупке, креатив vs смета</li>
+                    <li>Презентация нового инновационного инструмента для подготовки брифа</li>
+                  </ul>
+                  <h4>Городской event – программа 2015/2016</h4>
+                  <ul>
+                    <li>Экспертная сессия с представителями городских администраций и Департамента Культуры г. Москвы и РФ</li>
+                  </ul>
+                  <h4>Cоциальный event – новый тренд бизнеса</h4>
+                  <ul>
+                    <li>Панельная дискуссия с организатора крупнейших КСО-кампаний</li>
+                  </ul>
+                  <h4>Эффективный event: миф или реальность?!</h4>
+                  <ul>
+                    <li>Слово клиенту</li>
+                    <li>Роль event’а в развитии бизнеса</li>
+                    <li>Как выбрать правильного партнера</li>
+                    <li>Как отстоять бюджет</li>
+                    <li>Слово агентству</li>
+                    <li>Основные правила общения с Клиентом</li>
+                    <li>Равноправное партнерство – залог качественной работы и успешного результата – стратегия, в которой нет проигравших</li>
+                  </ul>
                 </div><!-- programm-tabs-day-1 -->
 
                 <div class="programm-tabs-day-2" id="day-2">
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptatibus reiciendis consectetur perferendis dicta eaque fugiat reprehenderit. Qui quisquam, facilis tempora dolorum ratione, nam fugiat modi pariatur minus eligendi possimus.</div>
-                <div>Nihil voluptatum enim vero cupiditate, natus, ipsum eius beatae nostrum ducimus dolor, magni, amet aliquam molestiae est nulla! Commodi delectus ducimus nam aperiam tempora voluptate, voluptatem esse sunt hic natus!</div>
-                <div>Natus aliquam sed debitis expedita! Laborum mollitia ratione ad assumenda veritatis ea, sint, incidunt, perspiciatis earum, vitae rem molestias omnis magnam unde. Numquam est vel earum voluptate repudiandae, ipsa ut!</div>
-                <div>Dicta fugit architecto quaerat, vitae asperiores aperiam, saepe sed alias veniam similique repellendus dolor voluptate facere illum temporibus labore numquam unde adipisci magni amet sint ipsam eveniet. Sint rem, ipsam.</div>
-                <div>Animi officiis harum nobis recusandae, est odit doloremque rerum ipsa, provident, suscipit soluta sit et qui. Tempore sint ad totam temporibus error eum, iste ratione dolorum ea non minus libero?</div>
-                <div>Omnis sed reiciendis dicta quae cum consequatur aspernatur facere tempore excepturi alias. Doloremque, explicabo deserunt eligendi, perspiciatis facilis laudantium laboriosam fugiat aspernatur, natus quos quis magnam. Nisi similique cumque, explicabo.</div>
-                <div>Repellat, voluptates, earum! Perferendis consequuntur debitis ratione, libero numquam maiores rem, et, facere tempora obcaecati placeat sint voluptas. Ea ratione aliquid doloribus, porro laborum dignissimos delectus odit eius ullam possimus.</div>
+                  <h4>Тендеры. Правила проведения и секреты успеха</h4>
+                  <ul>
+                    <li>Мировая экспертиза vs российская действительность</li>
+                    <li>Интервью с руководителями отдела закупок крупнейших компаний — заказчиков: event в закупке, креатив vs смета</li>
+                    <li>Презентация нового инновационного инструмента для подготовки брифа</li>
+                  </ul>
+                  <h4>Городской event – программа 2015/2016</h4>
+                  <ul>
+                    <li>Экспертная сессия с представителями городских администраций и Департамента Культуры г. Москвы и РФ</li>
+                  </ul>
+                  <h4>Cоциальный event – новый тренд бизнеса</h4>
+                  <ul>
+                    <li>Панельная дискуссия с организатора крупнейших КСО-кампаний</li>
+                  </ul>
+                  <h4>Эффективный event: миф или реальность?!</h4>
+                  <ul>
+                    <li>Слово клиенту</li>
+                    <li>Роль event’а в развитии бизнеса</li>
+                    <li>Как выбрать правильного партнера</li>
+                    <li>Как отстоять бюджет</li>
+                    <li>Слово агентству</li>
+                    <li>Основные правила общения с Клиентом</li>
+                    <li>Равноправное партнерство – залог качественной работы и успешного результата – стратегия, в которой нет проигравших</li>
+                  </ul>
                 </div><!-- programm-tabs-day-2 -->
 
                 <div class="programm-tabs-day-3" id="day-3">
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam rerum architecto, animi odit numquam ex obcaecati ipsam similique, dolorum expedita perferendis voluptatum dolores debitis blanditiis dolore incidunt suscipit harum totam?</div>
-                <div>Debitis perferendis unde quo dolorum illo, velit consectetur, sed minima fugiat ipsa repudiandae iusto a voluptatem neque nisi ab quidem numquam. Officiis iste amet aliquam, asperiores nisi architecto nam. Architecto.</div>
-                <div>Repudiandae obcaecati optio quam odit rem id, deleniti alias mollitia, molestiae assumenda tenetur quasi, modi magni sequi? Dignissimos enim consequuntur hic nesciunt, labore laudantium distinctio magni necessitatibus dolores iure reprehenderit!</div>
+                  <h4>Тендеры. Правила проведения и секреты успеха</h4>
+                  <ul>
+                    <li>Мировая экспертиза vs российская действительность</li>
+                    <li>Интервью с руководителями отдела закупок крупнейших компаний — заказчиков: event в закупке, креатив vs смета</li>
+                    <li>Презентация нового инновационного инструмента для подготовки брифа</li>
+                  </ul>
+                  <h4>Городской event – программа 2015/2016</h4>
+                  <ul>
+                    <li>Экспертная сессия с представителями городских администраций и Департамента Культуры г. Москвы и РФ</li>
+                  </ul>
+                  <h4>Cоциальный event – новый тренд бизнеса</h4>
+                  <ul>
+                    <li>Панельная дискуссия с организатора крупнейших КСО-кампаний</li>
+                  </ul>
+                  <h4>Эффективный event: миф или реальность?!</h4>
+                  <ul>
+                    <li>Слово клиенту</li>
+                    <li>Роль event’а в развитии бизнеса</li>
+                    <li>Как выбрать правильного партнера</li>
+                    <li>Как отстоять бюджет</li>
+                    <li>Слово агентству</li>
+                    <li>Основные правила общения с Клиентом</li>
+                    <li>Равноправное партнерство – залог качественной работы и успешного результата – стратегия, в которой нет проигравших</li>
+                  </ul>
                 </div><!-- programm-tabs-day-3 -->
 
               </div><!-- programm-tabs -->
+              <a href="#" class="dl-programm">Скачать программу</a>
             </article><!-- /.programm -->
 
             <article class="organizators">
@@ -392,7 +428,7 @@
               <table>
                 <tr>
                   <td>
-                    <img src="" alt="">
+                    <img src="img/organizators/organizators-1.jpg" alt="">
                   </td>
                   <td>
                     <h4>Журнал Event.ru</h4>
@@ -405,12 +441,12 @@
                     <p>информационный портал для event-специалистов, перезапущен в начале 2013 года</p>
                   </td>
                   <td>
-                    <img src="" alt="">
+                    <img src="img/organizators/organizators-2.jpg" alt="">
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <img src="" alt="">
+                    <img src="img/organizators/organizators-3.jpg" alt="">
                   </td>
                   <td>
                     <h4>Информационный портал EventCatalog.ru</h4>
@@ -423,7 +459,7 @@
                     <p>главная Event премия России</p>
                   </td>
                   <td>
-                    <img src="" alt="">
+                    <img src="img/organizators/organizators-4.jpg" alt="">
                   </td>
                 </tr>
               </table>
@@ -433,76 +469,282 @@
               <h2>Партнёры</h2>
               <h5>Спонсоры</h5>
               <ul class="partner-sponsors">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li>Стать спонсором</li>
+                <li><img src="img/partners/partner-sponsors1.jpg" alt=""><span>
+                    <h4>Main Division</h4>
+                    <p>генеральный партнёр</p>
+                    <a href="">maindivision.ru</a>
+                  </span></li>
+                <li><img src="img/partners/partner-sponsors2.jpg" alt=""><span>
+                    <h4>Main Division</h4>
+                    <p>генеральный партнёр</p>
+                    <a href="">maindivision.ru</a>
+                  </span></li>
+                <li><img src="img/partners/partner-sponsors3.jpg" alt=""><span>
+                    <h4>Main Division</h4>
+                    <p>генеральный партнёр</p>
+                    <a href="">maindivision.ru</a>
+                  </span></li>
+                <li><img src="img/partners/partner-sponsors4.jpg" alt=""><span>
+                    <h4>Main Division</h4>
+                    <p>генеральный партнёр</p>
+                    <a href="">maindivision.ru</a>
+                  </span></li>
+                <li><img src="img/partners/partner-sponsors5.jpg" alt=""><span>
+                    <h4>Main Division</h4>
+                    <p>генеральный партнёр</p>
+                    <a href="">maindivision.ru</a>
+                  </span></li>
+                <li><img src="img/partners/partner-sponsors6.jpg" alt=""><span>
+                    <h4>Main Division</h4>
+                    <p>генеральный партнёр</p>
+                    <a href="">maindivision.ru</a>
+                  </span></li>
+                <li><img src="img/partners/partner-sponsors7.jpg" alt=""><span>
+                    <h4>Main Division</h4>
+                    <p>генеральный партнёр</p>
+                    <a href="">maindivision.ru</a>
+                  </span></li>
+                <li><img src="img/partners/partner-sponsors8.jpg" alt=""><span>
+                    <h4>Main Division</h4>
+                    <p>генеральный партнёр</p>
+                    <a href="">maindivision.ru</a>
+                  </span></li>
+                <li><img src="img/partners/partner-sponsors9.jpg" alt=""><span>
+                    <h4>Main Division</h4>
+                    <p>генеральный партнёр</p>
+                    <a href="">maindivision.ru</a>
+                  </span></li>
+                <li><img src="img/partners/partner-sponsors10.jpg" alt=""><span>
+                    <h4>Main Division</h4>
+                    <p>генеральный партнёр</p>
+                    <a href="">maindivision.ru</a>
+                  </span></li>
+                <li><i>+</i>Стать спонсором</li>
               </ul>
               <h5>Генеральные партнёры</h5>
               <ul class="partner-general">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><img src="img/partners/partner-general1.jpg" alt=""><span>
+                    <h4>Main Division</h4>
+                    <p>генеральный партнёр</p>
+                    <a href="">maindivision.ru</a>
+                  </span></li>
+                <li><img src="img/partners/partner-general2.jpg" alt=""><span>
+                    <h4>Main Division</h4>
+                    <p>генеральный партнёр</p>
+                    <a href="">maindivision.ru</a>
+                  </span></li>
+                <li><img src="img/partners/partner-general3.jpg" alt=""><span>
+                    <h4>Main Division</h4>
+                    <p>генеральный партнёр</p>
+                    <a href="">maindivision.ru</a>
+                  </span></li>
+                <li><img src="img/partners/partner-general4.jpg" alt=""><span>
+                    <h4>Main Division</h4>
+                    <p>генеральный партнёр</p>
+                    <a href="">maindivision.ru</a>
+                  </span></li>
+                <li><img src="img/partners/partner-general5.jpg" alt=""><span>
+                    <h4>Main Division</h4>
+                    <p>генеральный партнёр</p>
+                    <a href="">maindivision.ru</a>
+                  </span></li>
               </ul>
               <h5>Информационные партнёры</h5>
               <ul class="partner-inform">
-                <li></li>
-                <li></li>
+                <li><img src="img/partners/partner-inform1.jpg" alt=""><span>
+                    <h4>Main Division</h4>
+                    <p>генеральный партнёр</p>
+                    <a href="">maindivision.ru</a>
+                  </span></li>
+                <li><img src="img/partners/partner-inform2.jpg" alt=""><span>
+                    <h4>Main Division</h4>
+                    <p>генеральный партнёр</p>
+                    <a href="">maindivision.ru</a>
+                  </span></li>
               </ul>
               <h5>Организационные партнёры</h5>
-                <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
+                <ul class="partner-organiz">
+                  <li><img src="img/partners/partner-organiz1.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz2.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz3.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz4.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz5.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz6.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz7.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz8.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz9.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz10.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz11.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz12.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz13.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz14.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz15.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz16.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz17.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz18.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz19.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz20.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz21.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz22.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz23.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz24.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz25.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz26.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz27.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz28.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz29.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz30.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz31.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
+                  <li><img src="img/partners/partner-organiz32.jpg" alt=""><span>
+                      <h4>Main Division</h4>
+                      <p>генеральный партнёр</p>
+                      <a href="">maindivision.ru</a>
+                    </span></li>
                 </ul>
             </article><!-- /.partners -->
 
             <article class="where-buy">
-              <h4>Global Event Forum</h4>
-              <p>успейте купить билет на главное событие event-индустрии</p>
-              <a href="#" class="buy-ticket">Купить билет</a>
+              <div class="inner">
+                <h4>Global Event Forum</h4>
+                <p>успейте купить билет на главное событие event-индустрии</p>
+                <a href="#" class="buy-ticket">Купить билет</a>
+              </div>
             </article><!-- /.where-buy -->
 
             <article class="maps">
-
+              <div class="inner">
+                <div class="marker">
+                  <h4>Global Event Forum</h4>
+                  <p>Москва, ул. Тверская, д. 7</p>
+                  <img src="img/maps.jpg" alt="">
+                </div>
+                <!-- /.marker -->
+              </div>
+              <div id="MyGmaps"></div>
             </article><!-- /.maps -->
 
             <article class="contacts">
@@ -588,7 +830,33 @@
         });
     });
     </script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=ru"></script>
+    <script type="text/javascript">
+      ///////////////////////////////////////////////////////////////////
+      // Powered By MapsEasy.com Maps Generator
+      // Please keep the author information as long as the maps in use.
+      // You can find the free service at: http://www.MapsEasy.com
+      ///////////////////////////////////////////////////////////////////
+      function LoadGmaps() {
+        var myLatlng = new google.maps.LatLng(55.7588308,37.6117616);
+        var myOptions = {
+          zoom: 16,
+          center: myLatlng,
+          disableDefaultUI: true,
+          navigationControl: false,
 
+          mapTypeControl: false,
+          streetViewControl: false,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+          }
+        var map = new google.maps.Map(document.getElementById("MyGmaps"), myOptions);
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title:"Москва, ул. Тверская, д. 7"
+        });
+      }
+    </script>
 
 
     <script type="text/javascript" src="js/scripts.js"></script>
