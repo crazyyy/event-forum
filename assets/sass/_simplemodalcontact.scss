@@ -1,0 +1,173 @@
+/*
+ * SimpleModal Contact Form
+ * http://simplemodal.com
+ *
+ * Copyright (c) 2013 Eric Martin - http://ericmmartin.com
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ */
+
+/* Overlay */
+
+#contact-overlay {
+  background-color: #000;
+}
+
+/* Container */
+
+#contact-container {
+
+  width: 450px;
+
+  text-align: left;
+  .contact-content {
+    height: 40px;
+
+    color: #ddd;
+    background-color: #333;
+  }
+  .contact-loading {
+    position: absolute;
+    z-index: 8000;
+
+    width: 54px;
+    height: 55px;
+    margin: -14px 0 0 190px;
+    padding: 0;
+
+    background: url(../img/contact/loading.gif) no-repeat;
+  }
+  .contact-message {
+    text-align: center;
+  }
+  .contact-error {
+    width: 92%;
+    margin: 0 auto;
+    padding: 2px;
+
+    border: 2px solid #ccc;
+    background: #000;
+  }
+  br {
+    clear: both;
+  }
+  form {
+    margin: 0;
+    padding: 0;
+  }
+  label {
+
+
+    display: block;
+    float: left;
+    clear: left;
+
+    width: 100px;
+    padding-right: 4px;
+
+    text-align: right;
+  }
+  .contact-input {
+
+    float: left;
+
+    width: 300px;
+    margin: 2px;
+    padding: 2px;
+
+    border: 1px solid #fff;
+    background: #eee;
+  }
+  textarea {
+    height: 114px;
+  }
+  .contact-cc {
+    cursor: default;
+    vertical-align: top;
+  }
+  .contact-top {
+    height: 13px;
+    margin: 0;
+    padding: 0;
+
+    border-radius: 8px 8px 0 0;
+    background-color: #333;
+  }
+  .contact-bottom {
+
+    height: 13px;
+
+    text-align: center;
+
+    border-radius: 0 0 8px 8px;
+    background-color: #333;
+    a {
+      position: relative;
+      top: -4px;
+
+      text-decoration: none;
+
+      color: #666;
+      &:link,
+      &:active,
+      &:visited {
+        position: relative;
+        top: -4px;
+
+        text-decoration: none;
+
+        color: #666;
+      }
+      &:hover {
+        color: #888;
+      }
+    }
+  }
+  .contact-button {
+
+    height: 26px;
+    margin: 4px 0 0 4px;
+
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    background: #d76300;
+    &:hover {
+      background: #f49000;
+    }
+  }
+  a.modal-close {
+    font-size: 18px;
+    font-weight: bold;
+
+    position: absolute;
+    top: 0;
+    right: 8px;
+
+    text-decoration: none;
+
+    color: #999;
+    &:link,
+    &:active,
+    &:visited {
+      font-size: 18px;
+      font-weight: bold;
+
+      position: absolute;
+      top: 0;
+      right: 8px;
+
+      text-decoration: none;
+
+      color: #999;
+    }
+    &:hover {
+      color: #ccc;
+    }
+  }
+}
