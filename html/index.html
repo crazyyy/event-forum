@@ -80,7 +80,11 @@
                 </ul>
 
                 <div class="how-it-was-photo" id="photo">
-                  <img src="img/how-it-was-slider/slide-1.jpg" alt="">
+                  <ul class="how-it-was-photo-slider">
+                    <li><img src="img/how-it-was-slider/slide-1.jpg" alt=""></li>
+                    <li><img src="img/how-it-was-slider/slide-1.jpg" alt=""></li>
+                    <li><img src="img/how-it-was-slider/slide-1.jpg" alt=""></li>
+                  </ul>
                 </div><!-- how-it-was-photo -->
 
                 <div class="how-it-was-cifres" id="cifres">
@@ -538,11 +542,40 @@
                   </td>
                 </tr>
               </table>
+              <ul>
+                <li class="organizators1">
+                  <img src="img/organizators/organizators-1.jpg" alt="">
+                </li>
+                <li class="organizators2">
+                  <a href="#">
+                    <h4>Журнал Event.ru</h4>
+                    <p>печатное профессиональное издание для специалистов в области event-маркетинга, существует с 2006 года, тираж 5000, 120 полос, переодичность: 6 номеров в год</p>
+                  </a>
+                </li>
+                <li class="organizators3">
+                  <img src="img/organizators/organizators-2.jpg" alt="">
+                </li>
+                <li class="organizators4">
+                  <a href="#">
+                    <h4>Портал Event.ru</h4>
+                    <p>информационный портал для event-специалистов, перезапущен в начале 2013 года</p>
+                  </a>
+                </li>
+                <li class="organizators5">
+                  <img src="img/organizators/organizators-1.jpg" alt="">
+                </li>
+                <li class="organizators6">
+                  <a href="#">
+                    <h4>Портал Event.ru</h4>
+                    <p>информационный портал для event-специалистов, перезапущен в начале 2013 года</p>
+                  </a>
+                </li>
+              </ul>
             </article><!-- /.organizators -->
 
             <article id="partners" class="partners scrollto">
               <h2>Партнёры</h2>
-              <h5>Спонсоры</h5>
+              <h5 class="partner-sponsors-hd">Спонсоры</h5>
               <ul class="partner-sponsors">
                 <li><img src="img/partners/partner-sponsors1.jpg" alt=""><span>
                     <h4>Main Division</h4>
@@ -596,7 +629,7 @@
                   </span></li>
                 <li><i>+</i>Стать спонсором</li>
               </ul>
-              <h5>Генеральные партнёры</h5>
+              <h5 class="partner-sponsors-hd">Генеральные партнёры</h5>
               <ul class="partner-general">
                 <li><img src="img/partners/partner-general1.jpg" alt=""><span>
                     <h4>Main Division</h4>
@@ -624,7 +657,7 @@
                     <a href="">maindivision.ru</a>
                   </span></li>
               </ul>
-              <h5>Информационные партнёры</h5>
+              <h5 class="partner-inform-hd">Информационные партнёры</h5>
               <ul class="partner-inform">
                 <li><img src="img/partners/partner-inform1.jpg" alt=""><span>
                     <h4>Main Division</h4>
@@ -637,7 +670,7 @@
                     <a href="">maindivision.ru</a>
                   </span></li>
               </ul>
-              <h5>Организационные партнёры</h5>
+              <h5 class="partner-organiz-hd">Организационные партнёры</h5>
                 <ul class="partner-organiz">
                   <li><img src="img/partners/partner-organiz1.jpg" alt=""><span>
                       <h4>Main Division</h4>
@@ -955,6 +988,14 @@
       });
 
       $('.reviews-slider').bxSlider({
+          slideWidth: 1000,
+          minSlides: 1,
+          maxSlides: 1,
+          slideMargin: 0,
+          pagerType: 'short',
+      });
+
+      $('.how-it-was-photo-slider').bxSlider({
           slideWidth: 1000,
           minSlides: 1,
           maxSlides: 1,
