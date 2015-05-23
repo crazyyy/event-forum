@@ -108,7 +108,8 @@
             </article><!-- /.how-it-was -->
 
             <article class="video-block">
-              <a href="https://www.youtube.com/watch?v=fP4lh4G4obE" class="lightbox yt-video"><img src="img/yt-video.jpg" alt=""></a>
+              <a href="https://www.youtube.com/watch?v=fP4lh4G4obE" rel="youtube" class="swipebox-video yt-video"><img src="img/yt-video.jpg" alt=""></a>
+
             </article><!-- /.video-block -->
 
             <article id="speakers" class="speakers scrollto">
@@ -919,14 +920,43 @@
 <script type="text/javascript" src="js/jquery.qtip.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.min.js"></script>
 <script type="text/javascript" src="js/jquery.stickyNavbar.min.js"></script>
-<script type="text/javascript" src="js/easybox.min.js"></script>
+<script type="text/javascript" src="js/jquery.swipebox.min.js"></script>
 <!-- load on 341+ -->
-
 
     <script>
     $(document).ready(function() {
         if($(window).width() >= 341) {
 
+      var tableTdCh1 = $('.price table td:nth-child(2)'),
+        tableTdCh2 = $('.price table td:nth-child(3)'),
+        tableTdCh3 = $('.price table td:nth-child(4)'),
+        tableTdCh4 = $('.price table td:nth-child(5)'),
+        tableTdCh5 = $('.price table td:nth-child(6)');
+
+        tableTdCh1.hover(function(){
+            $('.collgroupe-active').removeClass('collgroupe-active');
+            tableTdCh1.addClass('collgroupe-active');
+        });
+        tableTdCh2.hover(function(){
+            $('.collgroupe-active').removeClass('collgroupe-active');
+            tableTdCh2.addClass('collgroupe-active');
+        });
+        tableTdCh3.hover(function(){
+            $('.collgroupe-active').removeClass('collgroupe-active');
+            tableTdCh3.addClass('collgroupe-active');
+        });
+        tableTdCh4.hover(function(){
+            $('.collgroupe-active').removeClass('collgroupe-active');
+            tableTdCh4.addClass('collgroupe-active');
+        });
+        tableTdCh5.hover(function(){
+            $('.collgroupe-active').removeClass('collgroupe-active');
+            tableTdCh5.addClass('collgroupe-active');
+        });
+
+
+
+      $( '.swipebox-video' ).swipebox();
 
       // resize first block to window screen
       var winHeight = $( window ).height(),
@@ -1002,6 +1032,8 @@
           slideMargin: 0,
           pagerType: 'short',
       });
+
+      // $( '.swipebox-video' ).swipebox();
 
         }
     });

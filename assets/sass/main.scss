@@ -6,7 +6,7 @@
 @import '_font_gothapro.scss';
 @import '_sprite.scss';
 @import '_mixin.scss';
-@import '_easybox.scss';
+@import '_swipebox.scss';
 $width: 1000px;
 $footer: 350px;
 $footer_margin: $footer - 2 * $footer;
@@ -50,7 +50,166 @@ $trs: all .7s;
 
   color: #000;
 }
+.bx-wrapper {
+  position: relative;
 
+  margin: 0 auto 15px;
+  padding: 0;
+
+  *zoom: 1;
+  img {
+    display: block;
+
+    max-width: 100%;
+  }
+  .bx-viewport {
+    left: -5px;
+    /*fix other elements on the page moving (on Chrome)*/
+
+    transform: translatez(0);
+
+    border: 0;
+  }
+  .bx-pager,
+  .bx-controls-auto {
+    position: absolute;
+    bottom: 5px;
+
+    width: 100%;
+  }
+  .bx-loading {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    min-height: 50px;
+
+    background: url(../img/bx_loader.gif) center center no-repeat #fff;
+  }
+  .bx-pager {
+    font-size: 12px;
+    font-weight: bold;
+
+    text-align: center;
+
+    color: #fff;
+    .bx-pager-item {
+      display: inline-block;
+
+      *zoom: 1;
+      *display: inline;
+    }
+    &.bx-default-pager {
+      a {
+        display: block;
+
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+
+        text-indent: -9999px;
+
+        border-radius: 5px;
+        outline: 0;
+        background: #666;
+        &:hover,
+        &.active {
+          background: #000;
+        }
+      }
+    }
+  }
+  .bx-controls-auto {
+    .bx-controls-auto-item {
+      display: inline-block;
+
+      *zoom: 1;
+      *display: inline;
+    }
+  }
+  .bx-prev {
+    left: 0;
+
+    @include sprite($sprite-bx-pager-prev);
+  }
+  .bx-next {
+    right: 0;
+
+    @include sprite($sprite-bx-pager-next);
+  }
+  .bx-controls-direction {
+    a {
+      position: absolute;
+      z-index: 110;
+      top: 0;
+
+      text-indent: -9999px;
+
+      outline: 0;
+      &.disabled {
+        display: none;
+      }
+    }
+  }
+  .bx-controls-auto {
+    text-align: center;
+    .bx-start {
+      display: block;
+
+      width: 10px;
+      height: 11px;
+      margin: 0 3px;
+
+      text-indent: -9999px;
+
+      outline: 0;
+      background: url(../img/controls.png) -86px -11px no-repeat;
+      &:hover,
+      &.active {
+        background-position: -86px 0;
+      }
+    }
+    .bx-stop {
+      display: block;
+
+      width: 9px;
+      height: 11px;
+      margin: 0 3px;
+
+      text-indent: -9999px;
+
+      outline: 0;
+      background: url(../img/controls.png) -86px -44px no-repeat;
+      &:hover,
+      &.active {
+        background-position: -86px -33px;
+      }
+    }
+  }
+  .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+    width: 80%;
+
+    text-align: left;
+  }
+  .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+    right: 0;
+
+    width: 35px;
+  }
+  .bx-controls {
+    position: absolute;
+    top: -82px;
+    right: 0;
+
+    display: block;
+
+    width: 115px;
+    height: 23px;
+  }
+}
 body {
   font-family: 'GothamPro', sans-serif;
   font-size: 12px;
@@ -367,6 +526,13 @@ header {
   }
   .how-it-was-photo {
     height: 500px;
+
+    @extend .bx-wrapper;
+    .bx-controls {
+      top: auto;
+      right: 445px;
+      bottom: 30px;
+    }
     ul {
       display: block;
 
@@ -537,6 +703,8 @@ header {
   text-align: center;
 
   background-color: #f02337;
+
+  @extend .bx-wrapper;
   h2 {
     color: #fff;
 
@@ -577,166 +745,6 @@ header {
           color: #fff;
         }
       }
-    }
-  }
-  .bx-wrapper {
-    position: relative;
-
-    margin: 0 auto 15px;
-    padding: 0;
-
-    *zoom: 1;
-    img {
-      display: block;
-
-      max-width: 100%;
-    }
-    .bx-viewport {
-      left: -5px;
-      /*fix other elements on the page moving (on Chrome)*/
-
-      transform: translatez(0);
-
-      border: 0;
-    }
-    .bx-pager,
-    .bx-controls-auto {
-      position: absolute;
-      bottom: 5px;
-
-      width: 100%;
-    }
-    .bx-loading {
-      position: absolute;
-      z-index: 100;
-      top: 0;
-      left: 0;
-
-      width: 100%;
-      height: 100%;
-      min-height: 50px;
-
-      background: url(../img/bx_loader.gif) center center no-repeat #fff;
-    }
-    .bx-pager {
-      font-size: 12px;
-      font-weight: bold;
-
-      text-align: center;
-
-      color: #fff;
-      .bx-pager-item {
-        display: inline-block;
-
-        *zoom: 1;
-        *display: inline;
-      }
-      &.bx-default-pager {
-        a {
-          display: block;
-
-          width: 10px;
-          height: 10px;
-          margin: 0 5px;
-
-          text-indent: -9999px;
-
-          border-radius: 5px;
-          outline: 0;
-          background: #666;
-          &:hover,
-          &.active {
-            background: #000;
-          }
-        }
-      }
-    }
-    .bx-controls-auto {
-      .bx-controls-auto-item {
-        display: inline-block;
-
-        *zoom: 1;
-        *display: inline;
-      }
-    }
-    .bx-prev {
-      left: 0;
-
-      @include sprite($sprite-bx-pager-prev);
-    }
-    .bx-next {
-      right: 0;
-
-      @include sprite($sprite-bx-pager-next);
-    }
-    .bx-controls-direction {
-      a {
-        position: absolute;
-        z-index: 110;
-        top: 0;
-
-        text-indent: -9999px;
-
-        outline: 0;
-        &.disabled {
-          display: none;
-        }
-      }
-    }
-    .bx-controls-auto {
-      text-align: center;
-      .bx-start {
-        display: block;
-
-        width: 10px;
-        height: 11px;
-        margin: 0 3px;
-
-        text-indent: -9999px;
-
-        outline: 0;
-        background: url(../img/controls.png) -86px -11px no-repeat;
-        &:hover,
-        &.active {
-          background-position: -86px 0;
-        }
-      }
-      .bx-stop {
-        display: block;
-
-        width: 9px;
-        height: 11px;
-        margin: 0 3px;
-
-        text-indent: -9999px;
-
-        outline: 0;
-        background: url(../img/controls.png) -86px -44px no-repeat;
-        &:hover,
-        &.active {
-          background-position: -86px -33px;
-        }
-      }
-    }
-    .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
-      width: 80%;
-
-      text-align: left;
-    }
-    .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
-      right: 0;
-
-      width: 35px;
-    }
-    .bx-controls {
-      position: absolute;
-      top: -82px;
-      right: 0;
-
-      display: block;
-
-      width: 115px;
-      height: 23px;
     }
   }
   .tooltip {
@@ -1129,9 +1137,11 @@ header {
           &:nth-child(5) {
             border-right-color: #f6f6f6;
             border-bottom-color: #f6f6f6;
+            border-left-color: #f6f6f6;
           }
           &:last-child {
             border-bottom-color: #f6f6f6;
+            border-left-color: #f6f6f6;
           }
         }
         .collgroupe-active {
@@ -1172,18 +1182,24 @@ header {
           &:nth-child(2),
           &:nth-child(3),
           &:nth-child(4),
-          &:nth-child(5) {
-            border-right-color: #fff;
-            border-bottom-color: #f6f6f6;
-          }
+          &:nth-child(5),
           &:last-child {
-            border-bottom-color: #f6f6f6;
+            border-color: #fff;
+            border-right-color: #fff;
+          }
+
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(5),
+          &:last-child {
+            border-color: #fff;
+            border-left-color: #fff;
           }
         }
         .collgroupe-active {
-          border-top: 1px solid #f02337;
+          border-top: 1px solid #f02337 !important;
           border-right: 1px solid #f02337 !important;
-          border-left: 1px solid #f02337;
+          border-left: 1px solid #f02337 !important;
         }
       }
       &:nth-child(3),
@@ -1200,6 +1216,12 @@ header {
           &:nth-child(4),
           &:nth-child(5) {
             border-right-color: #f6f6f6;
+          }
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(5),
+          &:nth-child(6) {
+            border-left-color: #f6f6f6;
           }
         }
         .collgroupe-active {
@@ -1409,6 +1431,9 @@ header {
   background-color: #f0f0f0;
   h2 {
     @extend .heading;
+  }
+  ul {
+    display: none;
   }
   table {
     @extend .inner;
