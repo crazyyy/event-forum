@@ -120,11 +120,51 @@
                     <img src="img/speakers/speakers1.jpg" alt="">
                     <h5>Евгения Брагина</h5>
                     <p>генеральный директор, <a href="">учредитель Event Cube</a></p>
+                    <span class="tooltip">
+                      <table>
+                        <tr>
+                          <td>Компания:</td>
+                          <td>Должность:</td>
+                          <td>Город проживания/работы:</td>
+                        </tr>
+                        <tr>
+                          <td>Vok Dams</td>
+                          <td>Президент компании</td>
+                          <td>Берлин</td>
+                        </tr>
+                      </table>
+                      <h6>Интересные / важные факты о комании:</h6>
+                      <ul>
+                        <li>Агентство Vok Dams, основанное в 1975 году, входит в ТОП-5 событийных маркетинговых агентств в мире.</li>
+                        <li>3-е место в ТОП-50 event-агентств мира по версии журнала Special event.</li>
+                        <li>Основали единственный в мире интститут Live marketing в 2005 году.</li>
+                      </ul>
+                    </span><!-- tooltip -->
                   </li>
                   <li>
                     <img src="img/speakers/speakers2.jpg" alt="">
                     <h5>Данило Ланге</h5>
                     <p>генеральный директор<a href="">Louder</a></p>
+                    <span class="tooltip">
+                      <table>
+                        <tr>
+                          <td>Компания:</td>
+                          <td>Должность:</td>
+                          <td>Город проживания/работы:</td>
+                        </tr>
+                        <tr>
+                          <td>Vok Dams</td>
+                          <td>Президент компании</td>
+                          <td>Берлин</td>
+                        </tr>
+                      </table>
+                      <h6>Интересные / важные факты о комании:</h6>
+                      <ul>
+                        <li>Агентство Vok Dams, основанное в 1975 году, входит в ТОП-5 событийных маркетинговых агентств в мире.</li>
+                        <li>3-е место в ТОП-50 event-агентств мира по версии журнала Special event.</li>
+                        <li>Основали единственный в мире интститут Live marketing в 2005 году.</li>
+                      </ul>
+                    </span><!-- tooltip -->
                   </li>
                   <li>
                     <img src="img/speakers/speakers3.jpg" alt="">
@@ -155,11 +195,51 @@
                     <img src="img/speakers/speakers4.jpg" alt="">
                     <h5>Александр Сафонов</h5>
                     <p>руководитель event-направления в СНГ <a href="">Oriflame Cosmetics</a></p>
+                    <span class="tooltip">
+                      <table>
+                        <tr>
+                          <td>Компания:</td>
+                          <td>Должность:</td>
+                          <td>Город проживания/работы:</td>
+                        </tr>
+                        <tr>
+                          <td>Vok Dams</td>
+                          <td>Президент компании</td>
+                          <td>Берлин</td>
+                        </tr>
+                      </table>
+                      <h6>Интересные / важные факты о комании:</h6>
+                      <ul>
+                        <li>Агентство Vok Dams, основанное в 1975 году, входит в ТОП-5 событийных маркетинговых агентств в мире.</li>
+                        <li>3-е место в ТОП-50 event-агентств мира по версии журнала Special event.</li>
+                        <li>Основали единственный в мире интститут Live marketing в 2005 году.</li>
+                      </ul>
+                    </span><!-- tooltip -->
                   </li>
                   <li>
                     <img src="img/speakers/speakers5.jpg" alt="">
                     <h5>Людмила Терехова</h5>
                     <p>руководитель департамента коммуникаций <a href="">M.Видео</a></p>
+                    <span class="tooltip">
+                      <table>
+                        <tr>
+                          <td>Компания:</td>
+                          <td>Должность:</td>
+                          <td>Город проживания/работы:</td>
+                        </tr>
+                        <tr>
+                          <td>Vok Dams</td>
+                          <td>Президент компании</td>
+                          <td>Берлин</td>
+                        </tr>
+                      </table>
+                      <h6>Интересные / важные факты о комании:</h6>
+                      <ul>
+                        <li>Агентство Vok Dams, основанное в 1975 году, входит в ТОП-5 событийных маркетинговых агентств в мире.</li>
+                        <li>3-е место в ТОП-50 event-агентств мира по версии журнала Special event.</li>
+                        <li>Основали единственный в мире интститут Live marketing в 2005 году.</li>
+                      </ul>
+                    </span><!-- tooltip -->
                   </li>
 
 
@@ -844,7 +924,7 @@
               </div>
             </article><!-- /.where-buy -->
 
-            <article class="maps">
+            <article id="contacts" class="maps scrollto">
               <div class="inner">
                 <div class="marker">
                   <h4>Global Event Forum</h4>
@@ -856,7 +936,7 @@
               <div id="MyGmaps"></div>
             </article><!-- /.maps -->
 
-            <article id="contacts" class="contacts scrollto">
+            <article class="contacts">
               <ul>
                 <li>
                   <h4>Программа форума и партнерство:</h4>
@@ -908,6 +988,15 @@
               jQuery.browser.version = RegExp.$1;
           }
       })();
+
+    // view all spekers
+      var viewButton = $('#speakers .view-all'),
+        carousellBlock = $('#speakers');
+      viewButton.click(function() {
+        carousellBlock.toggleClass( 'bx-wrapper-disabled', 1000 );
+        viewButton.toggleClass( "view-all hide-all", 1000 );
+      });
+
     </script>
     <script type="text/javascript" src="js/jquery.hashchange.min.js"></script>
     <script type="text/javascript" src="js/jquery.easytabs.min.js"></script>
@@ -915,9 +1004,6 @@
       $('.how-it-was-tabs').easytabs();
       $('.programm-tabs').easytabs();
     </script>
-
-<script></script>
-
 
 <!-- load on 341+ -->
 <script type="text/javascript" src="js/jquery.qtip.min.js"></script>
@@ -930,11 +1016,13 @@
     $(document).ready(function() {
         if($(window).width() >= 341) {
 
+
       var tableTdCh1 = $('.price table td:nth-child(2)'),
         tableTdCh2 = $('.price table td:nth-child(3)'),
         tableTdCh3 = $('.price table td:nth-child(4)'),
         tableTdCh4 = $('.price table td:nth-child(5)'),
-        tableTdCh5 = $('.price table td:nth-child(6)');
+        tableTdCh5 = $('.price table td:nth-child(6)'),
+        tableall = $('.price table');
 
         tableTdCh1.hover(function(){
             $('.collgroupe-active').removeClass('collgroupe-active');
@@ -956,7 +1044,10 @@
             $('.collgroupe-active').removeClass('collgroupe-active');
             tableTdCh5.addClass('collgroupe-active');
         });
-
+        tableall.mouseout(function() {
+          $('.collgroupe-active').removeClass('collgroupe-active');
+          tableTdCh4.addClass('collgroupe-active');
+        });
 
 
       $( '.swipebox-video' ).swipebox();
@@ -967,26 +1058,14 @@
         winHeight = winHeight - 343 - 100;
         firstWindow.height(winHeight);
 
-    // view all spekers
-      var viewButton = $('#speakers .view-all'),
-        carousellBlock = $('#speakers .bx-wrapper');
-        $(function() {
-          viewButton.click(function() {
-            carousellBlock.toggleClass( "bx-wrapper-disabled", 1000 );
-            viewButton.toggleClass( "view-all hide-all", 1000 );
-          });
-        });
 
       // Grab all elements with the class "hasTooltip"
-      $('.bxslider li').each(function() { // Notice the .each() loop, discussed below
+      $('#speakers li').each(function() { // Notice the .each() loop, discussed below
           $(this).qtip({
               content: {
                   text: $(this).children('span') // Use the "div" element next to this for the content
               },
-                  position: {
-          my: 'center center',  // Position my top left...
-          at: 'center center'
-      }
+              position: { adjust: { x: -500, y: -75 } }
           });
       });
 
@@ -1004,12 +1083,27 @@
           jqueryEffects: false,           // jQuery animation on/off
           jqueryAnim: "slideDown",        // jQuery animation type: fadeIn, show or slideDown
           selector: "a",                  // Selector to which activeClass will be added, either "a" or "li"
-          mobile: false,                  // If false nav will not stick under 480px width of window
-          mobileWidth: 480,               // The viewport width (without scrollbar) under which stickyNavbar will not be applied (due usability on mobile devices)
+          mobile: true,                  // If false nav will not stick under 480px width of window
+          mobileWidth: 340,               // The viewport width (without scrollbar) under which stickyNavbar will not be applied (due usability on mobile devices)
           zindex: 9999,                   // The zindex value to apply to the element: default 9999, other option is "auto"
-          stickyModeClass: "sticky",      // Class that will be applied to 'this' in sticky mode
-          unstickyModeClass: "unsticky"   // Class that will be applied to 'this' in non-sticky mode
+          stickyModeClass: "sticky-zz",      // Class that will be applied to 'this' in sticky mode
+          unstickyModeClass: "unsticky-zz"   // Class that will be applied to 'this' in non-sticky mode
         });
+      });
+
+
+      $(function() {
+          //caches a jQuery object containing the header element
+          var header = $(".header");
+          $(window).scroll(function() {
+              var scroll = $(window).scrollTop();
+
+              if (scroll >= 150) {
+                  header.removeClass('dark-header').addClass('opa-header');
+              } else {
+                  header.removeClass("opa-header").addClass('dark-header');
+              }
+          });
       });
 
       $('.bxslider').bxSlider({
@@ -1101,6 +1195,7 @@
       ///////////////////////////////////////////////////////////////////
       function LoadGmaps() {
         var myLatlng = new google.maps.LatLng(55.7588308,37.6117616);
+        var contentString = '';
         var myOptions = {
           zoom: 16,
           center: myLatlng,
