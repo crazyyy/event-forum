@@ -925,7 +925,8 @@
             </article><!-- /.where-buy -->
 
             <article id="contacts" class="maps scrollto">
-              <div class="inner">
+              <div id="MyGmaps"></div>
+              <div class="markus">
                 <div class="marker">
                   <h4>Global Event Forum</h4>
                   <p>Москва, ул. Тверская, д. 7</p>
@@ -933,7 +934,6 @@
                 </div>
                 <!-- /.marker -->
               </div>
-              <div id="MyGmaps"></div>
             </article><!-- /.maps -->
 
             <article class="contacts">
@@ -1207,11 +1207,6 @@
           mapTypeId: google.maps.MapTypeId.ROADMAP
           }
         var map = new google.maps.Map(document.getElementById("MyGmaps"), myOptions);
-        var marker = new google.maps.Marker({
-          position: myLatlng,
-          map: map,
-          title:"Москва, ул. Тверская, д. 7"
-        });
       }
     </script>
 

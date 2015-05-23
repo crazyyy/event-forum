@@ -1316,7 +1316,7 @@ header {
   background-image: url(../img/bg/programm.jpg);
   background-repeat: no-repeat;
   background-position: center top;
-/*   background-size: contain; */
+  /*   background-size: contain; */
   background-size: 100% 600px;
   h2 {
     color: #fff;
@@ -1694,44 +1694,72 @@ header {
 
     background-color: transparent;
   }
+  .markus {
+    position: absolute;
+    z-index: 50;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+
+    width: 1px;
+    height: 1px;
+
+    content: '';
+
+    .marker {
+      position: absolute;
+      z-index: 20;
+      top: -220px;
+      left: -125px;
+
+      width: 250px;
+      height: 200px;
+      padding: 25px 30px 0;
+
+      color: #fff;
+      background-color: #f02337;
+      &:before {
+        position: absolute;
+        bottom: -15px;
+        left: 105px;
+
+        display: block;
+
+        width: 0;
+        height: 0;
+
+        content: '';
+        -webkit-transform: rotate(360deg);
+
+        border-width: 15px 15px 0 15px;
+        border-style: solid;
+        border-style: inset;
+        border-color: #f02337 transparent transparent transparent;
+      }
+      img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100px;
+      }
+      h4 {
+        font-size: 16px;
+        font-weight: 700;
+
+        margin: 0 0 18px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.8;
+      }
+    }
+  }
   #MyGmaps {
     width: 100%;
     height: 100%;
-  }
-  .inner {
-    z-index: 20;
-
-    height: 1px;
-  }
-  .marker {
-    position: absolute;
-    top: 50px;
-    left: 370px;
-
-    width: 250px;
-    height: 200px;
-    padding: 25px 30px 0;
-
-    color: #fff;
-    background-color: #f02337;
-    img {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-
-      width: 100%;
-      height: 100px;
-    }
-    h4 {
-      font-size: 16px;
-      font-weight: 700;
-
-      margin: 0 0 18px;
-    }
-    p {
-      font-size: 14px;
-      line-height: 1.8;
-    }
   }
 }
 .contacts {
@@ -1827,26 +1855,20 @@ footer {
 
       color: #fff;
       border: 1px solid transparent;
-      border-radius: 4px;
       border-color: #fff;
-            &:hover {
-      border-color: #141b2d;
-      background-color: #141b2d;
+      border-radius: 4px;
+      &:hover {
+        border-color: #141b2d;
+        background-color: #141b2d;
       }
     }
     .iwannabearepartner {
       left: 0;
-
-
-
     }
     .dload {
       right: 0;
 
       width: 235px;
-
-
-
     }
   }
 }
