@@ -9,10 +9,12 @@
  */
 
 jQuery(function ($) {
+  var beSponsor = $('.partner-sponsors li:last-child');
+
 	var contact = {
 		message: null,
 		init: function () {
-			$('#contact-form input.contact, #contact-form a.contact').click(function (e) {
+			beSponsor.click(function (e) {
 				e.preventDefault();
 
 				// load the contact form using ajax
@@ -108,7 +110,7 @@ jQuery(function ($) {
 							height: '30px'
 						}, contact.showError);
 					}
-					
+
 				}
 			});
 		},
@@ -161,7 +163,7 @@ jQuery(function ($) {
 		validateEmail: function (email) {
 			var at = email.lastIndexOf("@");
 
-			// Make sure the at (@) sybmol exists and  
+			// Make sure the at (@) sybmol exists and
 			// it is not the first or last character
 			if (at < 1 || (at + 1) === email.length)
 				return false;
@@ -193,7 +195,7 @@ jQuery(function ($) {
 
 			// Make sure domain contains only valid characters and at least one period
 			if (!/^[-a-zA-Z0-9\.]*$/.test(domain) || domain.indexOf(".") === -1)
-				return false;	
+				return false;
 
 			return true;
 		},

@@ -13,7 +13,7 @@ var gulp = require('gulp'),
 /* if work with html == true, else - false */
 var htmlOWp = true,
   wpThemeName = 'wp-framework',
-  wpDomain = 'wp-framework.dev';
+  wpDomain = 'event-forum.dev';
 
 var AUTOPREFIXER_BROWSERS = [
   'ie >= 8', 'ie_mob >= 10', 'ff >= 20', 'chrome >= 24', 'safari >= 5', 'opera >= 12', 'ios >= 7', 'android >= 2.3', '> 1%', 'last 4 versions', 'bb >= 10'
@@ -212,10 +212,9 @@ gulp.task('serve', ['clearPluginCache', 'sprite', 'image', 'webp', 'scripts', 's
   if (htmlOWp === true) {
     browserSync({
       notify: false,
-      port: 9000,
-      server: {
-        baseDir: basePaths.dest,
-      }
+      proxy: wpDomain,
+      host: wpDomain,
+      port: 8282
     });
   } else {
     browserSync({

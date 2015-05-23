@@ -1033,7 +1033,10 @@ header {
     }
   }
   .bx-controls {
-    position: relative;
+    position: absolute;
+    top: auto;
+    right: 440px;
+    bottom: 0;
 
     width: 114px;
     height: 23px;
@@ -1187,7 +1190,6 @@ header {
             border-color: #fff;
             border-right-color: #fff;
           }
-
           &:nth-child(3),
           &:nth-child(4),
           &:nth-child(5),
@@ -1586,7 +1588,7 @@ header {
         line-height: 1.6;
 
         padding: 35px 20px 0;
-
+cursor: pointer;
         color: #ee2337;
         border-color: #f02337;
         i {
@@ -2663,7 +2665,6 @@ opacity: 1 !important; */
 /* Container */
 
 #contact-container {
-
   width: 450px;
 
   text-align: left;
@@ -2703,8 +2704,6 @@ opacity: 1 !important; */
     padding: 0;
   }
   label {
-
-
     display: block;
     float: left;
     clear: left;
@@ -2715,7 +2714,6 @@ opacity: 1 !important; */
     text-align: right;
   }
   .contact-input {
-
     float: left;
 
     width: 300px;
@@ -2741,7 +2739,6 @@ opacity: 1 !important; */
     background-color: #333;
   }
   .contact-bottom {
-
     height: 13px;
 
     text-align: center;
@@ -2771,7 +2768,6 @@ opacity: 1 !important; */
     }
   }
   .contact-button {
-
     height: 26px;
     margin: 4px 0 0 4px;
 
