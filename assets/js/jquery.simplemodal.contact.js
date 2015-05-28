@@ -24,7 +24,8 @@ jQuery(function ($) {
 						closeHTML: "<a href='#' title='Close' class='modal-close'>x</a>",
 						position: ["15%",],
 						overlayId: 'contact-overlay',
-						containerId: 'contact-container',
+            containerId: 'contact-container',
+						overlayClose  : true,
 						onOpen: contact.open,
 						onShow: contact.show,
 						onClose: contact.close

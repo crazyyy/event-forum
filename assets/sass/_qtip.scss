@@ -59,7 +59,10 @@
     }
   }
   h6 {
-    margin: 0 auto 1px 18px;
+    font-size: 14px;
+    font-weight: 700;
+
+    margin: 0 auto 18px;
 
     text-align: left;
   }
@@ -67,6 +70,9 @@
     margin: 0;
     padding: 0;
     li {
+      font-size: 14px;
+      font-weight: normal;
+
       position: relative;
 
       margin: 0 0 15px;
@@ -86,6 +92,26 @@
         border-radius: 50%;
         background-color: #f02337;
       }
+    }
+  }
+  &.qtip-first {
+    &:before {
+      left: 82px;
+    }
+  }
+  &.qtip-second {
+    &:before {
+      left: 182px;
+    }
+  }
+  &.qtip-four {
+    &:before {
+      left: 582px;
+    }
+  }
+  &.qtip-five {
+    &:before {
+      left: 682px;
     }
   }
 }

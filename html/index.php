@@ -35,6 +35,7 @@
             <li><a href="#price">СТОИМОСТЬ И УЧАСТИЕ</a></li>
             <li><a href="#contacts">КОНТАКТЫ</a></li>
           </ul>
+
           <ul class="nav-320">
             <li><a href="#about">О ФОРУМЕ</a></li>
             <li><a href="#programm">ПРОГРАММА</a></li>
@@ -44,11 +45,11 @@
             <li><a href="#contacts">КОНТАКТЫ</a></li>
           </ul>
         </nav>
+        <span class="hamburger"><i></i></span>
         <!-- /nav -->
       </div>
     </header>
     <!-- /header -->
-
     <div class="container inner">
         <!-- section -->
         <section role="main">
@@ -1060,12 +1061,72 @@
 
 
       // Grab all elements with the class "hasTooltip"
-      $('#speakers li').each(function() { // Notice the .each() loop, discussed below
+      var toolFirst = $('#speakers li:nth-child(5n+1)'),
+        toolSecond = $('#speakers li:nth-child(5n+2)'),
+        toolThird = $('#speakers li:nth-child(5n+3)'),
+        toolFour= $('#speakers li:nth-child(5n+4)'),
+        toolFive = $('#speakers li:nth-child(5n+5)'),
+        mainTip = $('.qtip-focus');
+
+      toolFirst.each(function() { // Notice the .each() loop, discussed below
           $(this).qtip({
               content: {
                   text: $(this).children('span') // Use the "div" element next to this for the content
               },
-              position: { adjust: { x: -500, y: -75 } }
+              position: { adjust: { x: -200, y: -75 } },
+              style: {
+                  classes: 'qtip-first'
+              }
+          });
+          // $('.qtip-first').removeClass('qtip-first');
+          // mainTip.addClass('qtip-first');
+      });
+
+      toolSecond.each(function() { // Notice the .each() loop, discussed below
+          $(this).qtip({
+              content: {
+                  text: $(this).children('span') // Use the "div" element next to this for the content
+              },
+              position: { adjust: { x: -300, y: -75 } },
+              style: {
+                  classes: 'qtip-second'
+              }
+          });
+      });
+
+      toolThird.each(function() { // Notice the .each() loop, discussed below
+          $(this).qtip({
+              content: {
+                  text: $(this).children('span') // Use the "div" element next to this for the content
+              },
+              position: { adjust: { x: -500, y: -75 } },
+              style: {
+                  classes: 'qtip-middle'
+              }
+          });
+      });
+
+      toolFour.each(function() { // Notice the .each() loop, discussed below
+          $(this).qtip({
+              content: {
+                  text: $(this).children('span') // Use the "div" element next to this for the content
+              },
+              position: { adjust: { x: -700, y: -95 } },
+              style: {
+                  classes: 'qtip-four'
+              }
+          });
+      });
+
+      toolFive.each(function() { // Notice the .each() loop, discussed below
+          $(this).qtip({
+              content: {
+                  text: $(this).children('span') // Use the "div" element next to this for the content
+              },
+              position: { adjust: { x: -800, y: -95 } },
+              style: {
+                  classes: 'qtip-five'
+              }
           });
       });
 
@@ -1099,9 +1160,9 @@
               var scroll = $(window).scrollTop();
 
               if (scroll >= 150) {
-                  header.removeClass('dark-header').addClass('opa-header');
+                  header.removeClass('opa-header').addClass('dark-header');
               } else {
-                  header.removeClass("opa-header").addClass('dark-header');
+                  header.removeClass("dark-header").addClass('opa-header');
               }
           });
       });
@@ -1138,6 +1199,16 @@
     </script>
 
     <script>
+    var hamburgerMenu = $('.hamburger'),
+      mobileMenu = $('.nav-320');
+      jQuery(document).ready(function () {
+        hamburgerMenu.click(function(){
+          mobileMenu.toggleClass('active');
+          hamburgerMenu.toggleClass('active');
+        });
+      });
+    </script>
+    <script>
     $(document).ready(function() {
         if($(window).width() <= 340) {
 
@@ -1155,7 +1226,7 @@
             minSlides: 1,
             maxSlides: 1,
             slideMargin: 0,
-            pagerType: 'short',
+            pagerType: 'full',
         });
 
         $('.reviews-slider').bxSlider({
@@ -1171,8 +1242,16 @@
             minSlides: 1,
             maxSlides: 1,
             slideMargin: 0,
-            pagerType: 'short',
+            pagerType: 'full',
         });
+
+      $('.how-it-was-photo-slider').bxSlider({
+          slideWidth: 320,
+          minSlides: 1,
+          maxSlides: 1,
+          slideMargin: 0,
+          pagerType: 'short',
+      });
 
 
         }
@@ -1187,6 +1266,7 @@
     </script>
 
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=ru"></script>
+
     <script type="text/javascript">
       ///////////////////////////////////////////////////////////////////
       // Powered By MapsEasy.com Maps Generator
