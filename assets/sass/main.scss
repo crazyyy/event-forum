@@ -3348,10 +3348,7 @@ html.swipebox-html.swipebox-touch {
   width: 100%;
   height: 100%;
 
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   img {
     border: none !important;
   }
@@ -4123,6 +4120,7 @@ a {
 
 .container {
   width: 100%;
+  min-width: 1000px;
   padding: 0 0 350px;
 }
 
@@ -4523,6 +4521,7 @@ header {
     padding: 0;
     ul {
       display: block;
+
       width: 996px;
       height: 332px;
       margin: 0 auto;
@@ -4546,13 +4545,16 @@ header {
       color: #000;
       background-color: #fff;
       span {
-            position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
-    display: block;
-    text-align: center;
-    width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        display: block;
+
+        width: 100%;
+
+        transform: translate(-50%, -50%);
+        text-align: center;
       }
       &:nth-child(6),
       &:nth-child(7),
@@ -4765,10 +4767,7 @@ header {
       .bxslider {
         width: 1000px !important;
 
-        -webkit-transform: none !important;
-            -ms-transform: none !important;
-             -o-transform: none !important;
-                transform: none !important;
+        transform: none !important;
       }
     }
     .bx-controls {
@@ -6457,18 +6456,23 @@ footer {
       }
     }
     .how-it-was-cifres {
-      height: 280px;
       overflow: hidden;
+
+      height: 280px;
       ul {
+        position: relative;
+
         overflow-x: scroll;
         overflow-y: hidden;
 
-        width: 840px;
+        width: 100%;
         height: 300px;
         padding-bottom: 20px;
 
         white-space: nowrap;
         li {
+          position: absolute;
+
           width: 140px;
           height: 140px;
 
@@ -6491,10 +6495,49 @@ footer {
           &:nth-child(9),
           &:nth-child(11) {
             padding: 60px 10px 0;
-/*             white-space: normal; */
           }
           &:before {
             top: 60px;
+          }
+          &:first-child,
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(5),
+          &:nth-child(6) {
+            top: 0;
+          }
+          &:nth-child(7),
+          &:nth-child(8),
+          &:nth-child(9),
+          &:nth-child(10),
+          &:nth-child(11),
+          &:nth-child(12) {
+            top: 140px;
+          }
+          &:first-child,
+          &:nth-child(7) {
+            left: 0;
+          }
+          &:nth-child(2),
+          &:nth-child(8) {
+            left: 140px;
+          }
+          &:nth-child(3),
+          &:nth-child(9) {
+            left: 280px;
+          }
+          &:nth-child(4),
+          &:nth-child(10) {
+            left: 420px;
+          }
+          &:nth-child(5),
+          &:nth-child(11) {
+            left: 560px;
+          }
+          &:nth-child(6),
+          &:nth-child(12) {
+            left: 700px;
           }
         }
       }
@@ -6927,17 +6970,12 @@ footer {
 
     width: 100%;
     padding: 35px 0 60px;
-    .etabs {
+    h2 {
       position: relative;
-
-      width: 100%;
-      margin: 0;
-
-      border-bottom: 2px #f02337;
       &:before {
         position: absolute;
-        bottom: 0;
-        left: 145px;
+        bottom: -220px;
+        left: 150px;
 
         display: block;
 
@@ -6952,10 +6990,39 @@ footer {
         border-style: inset;
         border-color: transparent transparent #f02337;
       }
-      li {
-        position: relative;
+    }
+    .etabs {
+      position: relative;
 
+      overflow-x: scroll;
+      overflow-y: hidden;
+
+      width: 160px;
+      height: 200px;
+      margin: 0 auto;
+      padding: 0;
+
+      border-bottom: 2px #f02337;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      li {
+        position: absolute;
+        top: 0;
+
+        display: inline-block;
+
+        width: 160px;
         padding: 0 0 40px;
+        &:first-child {
+          left: 0;
+        }
+        &:nth-child(2) {
+          left: 160px;
+        }
+        &:last-child {
+          left: 320px;
+        }
       }
     }
     .programm-tabs-day-1,
@@ -6966,15 +7033,10 @@ footer {
 
       border-radius: 0;
       background-color: #fff;
-      -webkit-box-shadow: none !important;
-              box-shadow: none !important;
+      box-shadow: none !important;
 
-      -webkit-column-count: auto;
-         -moz-column-count: auto;
-              column-count: auto;
-      -webkit-column-gap: auto;
-         -moz-column-gap: auto;
-              column-gap: auto;
+      column-count: auto;
+      column-gap: auto;
     }
     .programm-tabs-day-1 h4,
     .programm-tabs-day-2 h4,

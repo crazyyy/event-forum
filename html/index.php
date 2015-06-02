@@ -976,7 +976,7 @@
 </footer>
 <!-- /footer -->
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<!--     <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
     <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/jquery.simplemodal.js"></script>
     <script src="js/jquery.simplemodal.contact.js"></script>
