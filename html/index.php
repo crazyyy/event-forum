@@ -11,11 +11,12 @@
   <!-- icons -->
   <link href="favicon.ico" rel="shortcut icon">
   <!-- css + javascript -->
-  <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/main.css" media="all">
-  <script type="text/javascript" src="///cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
-
+  <link href="css/main.css" rel="stylesheet">
+  <script async type="text/javascript" src="///cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script>(function(){var WebP=new Image();WebP.onload=WebP.onerror=function(){
+  if(WebP.height!=2){var sc=document.createElement('script');sc.type='text/javascript';sc.async=true;
+  var s=document.getElementsByTagName('script')[0];sc.src='js/webpjs-0.0.2.min.js';s.parentNode.insertBefore(sc,s);}};
+  WebP.src='data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';})();</script>
 </head>
 <body>
 <!-- wrapper -->
@@ -24,8 +25,8 @@
     <header class="header clearfix" role="banner">
       <div class="inner">
         <div class="logo">
-            <img src="img/logo.png" alt="-" title="-" class="logo-img">
-            <img src="img/logo-320.png" alt="-" title="-" class="logo-img-320">
+            <img src="img/logo.webp" alt="-" title="-" class="logo-img">
+            <img src="img/logo-320.webp" alt="-" title="-" class="logo-img-320">
         </div>
         <!-- /logo -->
         <nav id="nav" role="navigation">
@@ -84,9 +85,9 @@
 
                 <div class="how-it-was-photo" id="photo">
                   <ul class="how-it-was-photo-slider">
-                    <li><img src="img/how-it-was-slider/slide-1.jpg" alt=""></li>
-                    <li><img src="img/how-it-was-slider/slide-1.jpg" alt=""></li>
-                    <li><img src="img/how-it-was-slider/slide-1.jpg" alt=""></li>
+                    <li><img src="img/how-it-was-slider/slide-1.webp" alt=""></li>
+                    <li><img src="img/how-it-was-slider/slide-1.webp" alt=""></li>
+                    <li><img src="img/how-it-was-slider/slide-1.webp" alt=""></li>
                   </ul>
                 </div><!-- how-it-was-photo -->
 
@@ -111,7 +112,7 @@
             </article><!-- /.how-it-was -->
 
             <article class="video-block">
-              <a href="https://www.youtube.com/watch?v=fP4lh4G4obE" rel="youtube" class="swipebox-video yt-video"><img src="img/yt-video.jpg" alt=""></a>
+              <a href="https://www.youtube.com/watch?v=fP4lh4G4obE" rel="youtube" class="swipebox-video yt-video"><img src="img/yt-video.webp" alt=""></a>
 
             </article><!-- /.video-block -->
 
@@ -120,7 +121,7 @@
                 <h2>Спикеры</h2>
                 <ul class="bxslider">
                   <li class="speakers-block">
-                    <img src="img/speakers/speakers1.jpg" alt="">
+                    <img src="img/speakers/speakers1.webp" alt="">
                     <h5>Евгения Брагина</h5>
                     <p>генеральный директор, <a href="">учредитель Event Cube</a></p>
                     <span class="tooltip">
@@ -145,7 +146,7 @@
                     </span><!-- tooltip -->
                   </li>
                   <li class="speakers-block">
-                    <img src="img/speakers/speakers2.jpg" alt="">
+                    <img src="img/speakers/speakers2.webp" alt="">
                     <h5>Данило Ланге</h5>
                     <p>генеральный директор<a href="">Louder</a></p>
                     <span class="tooltip">
@@ -170,7 +171,7 @@
                     </span><!-- tooltip -->
                   </li>
                   <li class="speakers-block">
-                    <img src="img/speakers/speakers3.jpg" alt="">
+                    <img src="img/speakers/speakers3.webp" alt="">
                     <h5>Анна Антонова</h5>
                     <p>управлющий партнёр <a href="">Louder</a></p>
                     <span class="tooltip">
@@ -195,7 +196,7 @@
                     </span><!-- tooltip -->
                   </li>
                   <li class="speakers-block">
-                    <img src="img/speakers/speakers4.jpg" alt="">
+                    <img src="img/speakers/speakers4.webp" alt="">
                     <h5>Александр Сафонов</h5>
                     <p>руководитель event-направления в СНГ <a href="">Oriflame Cosmetics</a></p>
                     <span class="tooltip">
@@ -220,7 +221,7 @@
                     </span><!-- tooltip -->
                   </li>
                   <li class="speakers-block">
-                    <img src="img/speakers/speakers5.jpg" alt="">
+                    <img src="img/speakers/speakers5.webp" alt="">
                     <h5>Людмила Терехова</h5>
                     <p>руководитель департамента коммуникаций <a href="">M.Видео</a></p>
                     <span class="tooltip">
@@ -247,27 +248,27 @@
 
 
                   <li class="speakers-block">
-                    <img src="img/speakers/speakers1.jpg" alt="">
+                    <img src="img/speakers/speakers1.webp" alt="">
                     <h5>Евгения Брагина</h5>
                     <p>генеральный директор, <a href="">учредитель Event Cube</a></p>
                   </li>
                   <li class="speakers-block">
-                    <img src="img/speakers/speakers2.jpg" alt="">
+                    <img src="img/speakers/speakers2.webp" alt="">
                     <h5>Данило Ланге</h5>
                     <p>генеральный директор<a href="">Louder</a></p>
                   </li>
                   <li class="speakers-block">
-                    <img src="img/speakers/speakers3.jpg" alt="">
+                    <img src="img/speakers/speakers3.webp" alt="">
                     <h5>Анна Антонова</h5>
                     <p>управлющий партнёр <a href="">Louder</a></p>
                   </li>
                   <li class="speakers-block">
-                    <img src="img/speakers/speakers4.jpg" alt="">
+                    <img src="img/speakers/speakers4.webp" alt="">
                     <h5>Александр Сафонов</h5>
                     <p>руководитель event-направления в СНГ <a href="">Oriflame Cosmetics</a></p>
                   </li>
                   <li class="speakers-block">
-                    <img src="img/speakers/speakers5.jpg" alt="">
+                    <img src="img/speakers/speakers5.webp" alt="">
                     <h5>Людмила Терехова</h5>
                     <p>руководитель департамента коммуникаций <a href="">M.Видео</a></p>
                   </li>
@@ -319,19 +320,19 @@
                 <h2>Отзывы</h2>
                 <ul class="reviews-slider">
                   <li>
-                    <img src="img/reviews/reviews1.jpg" alt="">
+                    <img src="img/reviews/reviews1.webp" alt="">
                     <h4>Иван Мищенко</h4>
                     <h5>управляющий партнер <a href="#">A5000 Event Solutions</a></h5>
                     <blockquote>Еще раз поздравляю с успешным проведением первого Global Event.ru Forum. Я присутствовал фактически на всех мероприятиях для event-менеджеров, но такой атмосферы не было нигде. На мой взгляд, это очень важно, и с такой атмосферой можно работать и дальше развиваться в разные стороны. Желаю проекту стать самым масштабным и значимым событием в event-индустрии!</blockquote>
                   </li>
                   <li>
-                    <img src="img/reviews/reviews1.jpg" alt="">
+                    <img src="img/reviews/reviews1.webp" alt="">
                     <h4>Иван Мищенко</h4>
                     <h5>управляющий партнер <a href="#">A5000 Event Solutions</a></h5>
                     <blockquote>Еще раз поздравляю с успешным проведением первого Global Event.ru Forum. Я присутствовал фактически на всех мероприятиях для event-менеджеров, но такой атмосферы не было нигде. На мой взгляд, это очень важно, и с такой атмосферой можно работать и дальше развиваться в разные стороны. Желаю проекту стать самым масштабным и значимым событием в event-индустрии!</blockquote>
                   </li>
                   <li>
-                    <img src="img/reviews/reviews1.jpg" alt="">
+                    <img src="img/reviews/reviews1.webp" alt="">
                     <h4>Иван Мищенко</h4>
                     <h5>управляющий партнер <a href="#">A5000 Event Solutions</a></h5>
                     <blockquote>Еще раз поздравляю с успешным проведением первого Global Event.ru Forum. Я присутствовал фактически на всех мероприятиях для event-менеджеров, но такой атмосферы не было нигде. На мой взгляд, это очень важно, и с такой атмосферой можно работать и дальше развиваться в разные стороны. Желаю проекту стать самым масштабным и значимым событием в event-индустрии!</blockquote>
@@ -583,7 +584,7 @@
               <table>
                 <tr>
                   <td>
-                    <img src="img/organizators/organizators-1.jpg" alt="">
+                    <img src="img/organizators/organizators-1.webp" alt="">
                   </td>
                   <td>
                     <a href="#">
@@ -600,12 +601,12 @@
                     </a>
                   </td>
                   <td>
-                    <img src="img/organizators/organizators-2.jpg" alt="">
+                    <img src="img/organizators/organizators-2.webp" alt="">
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <img src="img/organizators/organizators-3.jpg" alt="">
+                    <img src="img/organizators/organizators-3.webp" alt="">
                   </td>
                   <td>
                     <a href="#">
@@ -622,13 +623,13 @@
                     </a>
                   </td>
                   <td>
-                    <img src="img/organizators/organizators-4.jpg" alt="">
+                    <img src="img/organizators/organizators-4.webp" alt="">
                   </td>
                 </tr>
               </table>
               <ul>
                 <li class="organizators1">
-                  <img src="img/organizators/organizators-1.jpg" alt="">
+                  <img src="img/organizators/organizators-1.webp" alt="">
                 </li>
                 <li class="organizators2">
                   <a href="#">
@@ -637,7 +638,7 @@
                   </a>
                 </li>
                 <li class="organizators3">
-                  <img src="img/organizators/organizators-2.jpg" alt="">
+                  <img src="img/organizators/organizators-2.webp" alt="">
                 </li>
                 <li class="organizators4">
                   <a href="#">
@@ -646,7 +647,7 @@
                   </a>
                 </li>
                 <li class="organizators5">
-                  <img src="img/organizators/organizators-1.jpg" alt="">
+                  <img src="img/organizators/organizators-1.webp" alt="">
                 </li>
                 <li class="organizators6">
                   <a href="#">
@@ -661,52 +662,52 @@
               <h2>Партнёры</h2>
               <h5 class="partner-sponsors-hd">Спонсоры</h5>
               <ul class="partner-sponsors">
-                <li><img src="img/partners/partner-sponsors1.jpg" alt=""><span>
+                <li><img src="img/partners/partner-sponsors1.webp" alt=""><span>
                     <h4>Main Division</h4>
                     <p>генеральный партнёр</p>
                     <a href="">maindivision.ru</a>
                   </span></li>
-                <li><img src="img/partners/partner-sponsors2.jpg" alt=""><span>
+                <li><img src="img/partners/partner-sponsors2.webp" alt=""><span>
                     <h4>Main Division</h4>
                     <p>генеральный партнёр</p>
                     <a href="">maindivision.ru</a>
                   </span></li>
-                <li><img src="img/partners/partner-sponsors3.jpg" alt=""><span>
+                <li><img src="img/partners/partner-sponsors3.webp" alt=""><span>
                     <h4>Main Division</h4>
                     <p>генеральный партнёр</p>
                     <a href="">maindivision.ru</a>
                   </span></li>
-                <li><img src="img/partners/partner-sponsors4.jpg" alt=""><span>
+                <li><img src="img/partners/partner-sponsors4.webp" alt=""><span>
                     <h4>Main Division</h4>
                     <p>генеральный партнёр</p>
                     <a href="">maindivision.ru</a>
                   </span></li>
-                <li><img src="img/partners/partner-sponsors5.jpg" alt=""><span>
+                <li><img src="img/partners/partner-sponsors5.webp" alt=""><span>
                     <h4>Main Division</h4>
                     <p>генеральный партнёр</p>
                     <a href="">maindivision.ru</a>
                   </span></li>
-                <li><img src="img/partners/partner-sponsors6.jpg" alt=""><span>
+                <li><img src="img/partners/partner-sponsors6.webp" alt=""><span>
                     <h4>Main Division</h4>
                     <p>генеральный партнёр</p>
                     <a href="">maindivision.ru</a>
                   </span></li>
-                <li><img src="img/partners/partner-sponsors7.jpg" alt=""><span>
+                <li><img src="img/partners/partner-sponsors7.webp" alt=""><span>
                     <h4>Main Division</h4>
                     <p>генеральный партнёр</p>
                     <a href="">maindivision.ru</a>
                   </span></li>
-                <li><img src="img/partners/partner-sponsors8.jpg" alt=""><span>
+                <li><img src="img/partners/partner-sponsors8.webp" alt=""><span>
                     <h4>Main Division</h4>
                     <p>генеральный партнёр</p>
                     <a href="">maindivision.ru</a>
                   </span></li>
-                <li><img src="img/partners/partner-sponsors9.jpg" alt=""><span>
+                <li><img src="img/partners/partner-sponsors9.webp" alt=""><span>
                     <h4>Main Division</h4>
                     <p>генеральный партнёр</p>
                     <a href="">maindivision.ru</a>
                   </span></li>
-                <li><img src="img/partners/partner-sponsors10.jpg" alt=""><span>
+                <li><img src="img/partners/partner-sponsors10.webp" alt=""><span>
                     <h4>Main Division</h4>
                     <p>генеральный партнёр</p>
                     <a href="">maindivision.ru</a>
@@ -715,27 +716,27 @@
               </ul>
               <h5 class="partner-sponsors-hd">Генеральные партнёры</h5>
               <ul class="partner-general">
-                <li><img src="img/partners/partner-general1.jpg" alt=""><span>
+                <li><img src="img/partners/partner-general1.webp" alt=""><span>
                     <h4>Main Division</h4>
                     <p>генеральный партнёр</p>
                     <a href="">maindivision.ru</a>
                   </span></li>
-                <li><img src="img/partners/partner-general2.jpg" alt=""><span>
+                <li><img src="img/partners/partner-general2.webp" alt=""><span>
                     <h4>Main Division</h4>
                     <p>генеральный партнёр</p>
                     <a href="">maindivision.ru</a>
                   </span></li>
-                <li><img src="img/partners/partner-general3.jpg" alt=""><span>
+                <li><img src="img/partners/partner-general3.webp" alt=""><span>
                     <h4>Main Division</h4>
                     <p>генеральный партнёр</p>
                     <a href="">maindivision.ru</a>
                   </span></li>
-                <li><img src="img/partners/partner-general4.jpg" alt=""><span>
+                <li><img src="img/partners/partner-general4.webp" alt=""><span>
                     <h4>Main Division</h4>
                     <p>генеральный партнёр</p>
                     <a href="">maindivision.ru</a>
                   </span></li>
-                <li><img src="img/partners/partner-general5.jpg" alt=""><span>
+                <li><img src="img/partners/partner-general5.webp" alt=""><span>
                     <h4>Main Division</h4>
                     <p>генеральный партнёр</p>
                     <a href="">maindivision.ru</a>
@@ -743,12 +744,12 @@
               </ul>
               <h5 class="partner-inform-hd">Информационные партнёры</h5>
               <ul class="partner-inform">
-                <li><img src="img/partners/partner-inform1.jpg" alt=""><span>
+                <li><img src="img/partners/partner-inform1.webp" alt=""><span>
                     <h4>Main Division</h4>
                     <p>генеральный партнёр</p>
                     <a href="">maindivision.ru</a>
                   </span></li>
-                <li><img src="img/partners/partner-inform2.jpg" alt=""><span>
+                <li><img src="img/partners/partner-inform2.webp" alt=""><span>
                     <h4>Main Division</h4>
                     <p>генеральный партнёр</p>
                     <a href="">maindivision.ru</a>
@@ -756,162 +757,162 @@
               </ul>
               <h5 class="partner-organiz-hd">Организационные партнёры</h5>
                 <ul class="partner-organiz">
-                  <li><img src="img/partners/partner-organiz1.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz1.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz2.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz2.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz3.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz3.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz4.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz4.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz5.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz5.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz6.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz6.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz7.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz7.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz8.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz8.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz9.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz9.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz10.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz10.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz11.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz11.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz12.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz12.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz13.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz13.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz14.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz14.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz15.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz15.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz16.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz16.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz17.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz17.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz18.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz18.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz19.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz19.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz20.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz20.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz21.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz21.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz22.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz22.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz23.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz23.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz24.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz24.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz25.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz25.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz26.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz26.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz27.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz27.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz28.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz28.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz29.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz29.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz30.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz30.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz31.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz31.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
                     </span></li>
-                  <li><img src="img/partners/partner-organiz32.jpg" alt=""><span>
+                  <li><img src="img/partners/partner-organiz32.webp" alt=""><span>
                       <h4>Main Division</h4>
                       <p>генеральный партнёр</p>
                       <a href="">maindivision.ru</a>
@@ -933,7 +934,7 @@
                 <div class="marker">
                   <h4>Global Event Forum</h4>
                   <p>Москва, ул. Тверская, д. 7</p>
-                  <img src="img/maps.jpg" alt="">
+                  <img src="img/maps.webp" alt="">
                 </div>
                 <!-- /.marker -->
               </div>
