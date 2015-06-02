@@ -12,6 +12,7 @@
   <link href="favicon.ico" rel="shortcut icon">
   <!-- css + javascript -->
   <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" rel="stylesheet" type="text/css">
+<!--   <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
   <link rel="stylesheet" href="css/main.css" media="all">
   <script type="text/javascript" src="///cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
@@ -90,18 +91,18 @@
 
                 <div class="how-it-was-cifres" id="cifres">
                   <ul>
-                    <li>100</li>
-                    <li>Актуальных тем</li>
+                    <li><span>100</span></li>
+                    <li><span>Актуальных тем</span></li>
                     <li><span>70</span></li>
-                    <li>Спикеров</li>
-                    <li>600</li>
-                    <li>Участников из 50 городов</li>
-                    <li>Генеральных партнёров</li>
-                    <li>10</li>
-                    <li>Организационных партнёров</li>
-                    <li>50</li>
-                    <li>Аккредитованных СМИ</li>
-                    <li>50</li>
+                    <li><span>Спикеров</span></li>
+                    <li><span>600</span></li>
+                    <li><span>Участников из 50 городов</span></li>
+                    <li><span>Генеральных партнёров</span></li>
+                    <li><span>10</span></li>
+                    <li><span>Организационных партнёров</span></li>
+                    <li><span>50</span></li>
+                    <li><span>Аккредитованных СМИ</span></li>
+                    <li><span>50</span></li>
                   </ul>
                 </div><!-- how-it-was-cifres -->
               </div><!-- inner -->
@@ -117,7 +118,7 @@
               <div class="inner">
                 <h2>Спикеры</h2>
                 <ul class="bxslider">
-                  <li>
+                  <li class="speakers-block">
                     <img src="img/speakers/speakers1.jpg" alt="">
                     <h5>Евгения Брагина</h5>
                     <p>генеральный директор, <a href="">учредитель Event Cube</a></p>
@@ -142,7 +143,7 @@
                       </ul>
                     </span><!-- tooltip -->
                   </li>
-                  <li>
+                  <li class="speakers-block">
                     <img src="img/speakers/speakers2.jpg" alt="">
                     <h5>Данило Ланге</h5>
                     <p>генеральный директор<a href="">Louder</a></p>
@@ -167,7 +168,7 @@
                       </ul>
                     </span><!-- tooltip -->
                   </li>
-                  <li>
+                  <li class="speakers-block">
                     <img src="img/speakers/speakers3.jpg" alt="">
                     <h5>Анна Антонова</h5>
                     <p>управлющий партнёр <a href="">Louder</a></p>
@@ -192,7 +193,7 @@
                       </ul>
                     </span><!-- tooltip -->
                   </li>
-                  <li>
+                  <li class="speakers-block">
                     <img src="img/speakers/speakers4.jpg" alt="">
                     <h5>Александр Сафонов</h5>
                     <p>руководитель event-направления в СНГ <a href="">Oriflame Cosmetics</a></p>
@@ -217,7 +218,7 @@
                       </ul>
                     </span><!-- tooltip -->
                   </li>
-                  <li>
+                  <li class="speakers-block">
                     <img src="img/speakers/speakers5.jpg" alt="">
                     <h5>Людмила Терехова</h5>
                     <p>руководитель департамента коммуникаций <a href="">M.Видео</a></p>
@@ -244,27 +245,27 @@
                   </li>
 
 
-                  <li>
+                  <li class="speakers-block">
                     <img src="img/speakers/speakers1.jpg" alt="">
                     <h5>Евгения Брагина</h5>
                     <p>генеральный директор, <a href="">учредитель Event Cube</a></p>
                   </li>
-                  <li>
+                  <li class="speakers-block">
                     <img src="img/speakers/speakers2.jpg" alt="">
                     <h5>Данило Ланге</h5>
                     <p>генеральный директор<a href="">Louder</a></p>
                   </li>
-                  <li>
+                  <li class="speakers-block">
                     <img src="img/speakers/speakers3.jpg" alt="">
                     <h5>Анна Антонова</h5>
                     <p>управлющий партнёр <a href="">Louder</a></p>
                   </li>
-                  <li>
+                  <li class="speakers-block">
                     <img src="img/speakers/speakers4.jpg" alt="">
                     <h5>Александр Сафонов</h5>
                     <p>руководитель event-направления в СНГ <a href="">Oriflame Cosmetics</a></p>
                   </li>
-                  <li>
+                  <li class="speakers-block">
                     <img src="img/speakers/speakers5.jpg" alt="">
                     <h5>Людмила Терехова</h5>
                     <p>руководитель департамента коммуникаций <a href="">M.Видео</a></p>
@@ -424,7 +425,7 @@
               </table>
               <ul class="price-320">
                 <li>
-                  <div>Хочу знать</div>
+                  <div><span>Хочу знать</span></div>
                   <div>15 000 Р</div>
                   <div class="checked">День 1 — теория</div>
                   <div class="checked">День 2 — практика</div>
@@ -435,7 +436,7 @@
                   <div>Личный ассистент</div>
                 </li>
                 <li>
-                  <div>Хочу знать и веселиться</div>
+                  <div><span>Хочу знать и веселиться</span></div>
                   <div>19 500 Р</div>
                   <div class="checked">День 1 — теория</div>
                   <div class="checked">День 2 — практика</div>
@@ -446,7 +447,7 @@
                   <div>Личный ассистент</div>
                 </li>
                 <li>
-                  <div>Хочу всё знать</div>
+                  <div><span>Хочу всё знать</span></div>
                   <div>24 500 Р</div>
                   <div class="checked">День 1 — теория</div>
                   <div class="checked">День 2 — практика</div>
@@ -457,7 +458,7 @@
                   <div>Личный ассистент</div>
                 </li>
                 <li>
-                  <div>Хочу всё знать и веселиться</div>
+                  <div><span>Хочу всё знать и веселиться</span></div>
                   <div>29 500 Р</div>
                   <div class="checked">День 1 — теория</div>
                   <div class="checked">День 2 — практика</div>
@@ -468,7 +469,7 @@
                   <div>Личный ассистент</div>
                 </li>
                 <li>
-                  <div>Хочу всё</div>
+                  <div><span>Хочу всё</span></div>
                   <div>74 500 Р</div>
                   <div class="checked">День 1 — теория</div>
                   <div class="checked">День 2 — практика</div>
@@ -975,6 +976,7 @@
 </footer>
 <!-- /footer -->
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/jquery.simplemodal.js"></script>
     <script src="js/jquery.simplemodal.contact.js"></script>
@@ -992,8 +994,14 @@
 
     // view all spekers
       var viewButton = $('#speakers .view-all'),
-        carousellBlock = $('#speakers');
+        carousellBlock = $('#speakers'),
+        speakersLiCount = $('.speakers-block').length,
+        maxLiHeight = Math.max.apply(Math, $('.speakers-block').map(function(){ return $(this).height(); }).get());
+        speakersLiCount = speakersLiCount / 5;
+        console.log(speakersLiCount);
       viewButton.click(function() {
+        $('#speakers .bxslider').height((maxLiHeight + 20) * speakersLiCount);
+        $('.speakers-block').height(maxLiHeight + 15);
         carousellBlock.toggleClass( 'bx-wrapper-disabled', 1000 );
         viewButton.toggleClass( "view-all hide-all", 1000 );
       });
@@ -1069,6 +1077,8 @@
         mainTip = $('.qtip-focus');
 
       toolFirst.each(function() { // Notice the .each() loop, discussed below
+        if ( $(this).children('span').length !== 0 ) {
+
           $(this).qtip({
               content: {
                   text: $(this).children('span') // Use the "div" element next to this for the content
@@ -1078,11 +1088,11 @@
                   classes: 'qtip-first'
               }
           });
-          // $('.qtip-first').removeClass('qtip-first');
-          // mainTip.addClass('qtip-first');
+        }
       });
 
       toolSecond.each(function() { // Notice the .each() loop, discussed below
+        if ( $(this).children('span').length !== 0 ) {
           $(this).qtip({
               content: {
                   text: $(this).children('span') // Use the "div" element next to this for the content
@@ -1092,9 +1102,11 @@
                   classes: 'qtip-second'
               }
           });
+        }
       });
 
       toolThird.each(function() { // Notice the .each() loop, discussed below
+        if ( $(this).children('span').length !== 0 ) {
           $(this).qtip({
               content: {
                   text: $(this).children('span') // Use the "div" element next to this for the content
@@ -1104,53 +1116,38 @@
                   classes: 'qtip-middle'
               }
           });
+        }
       });
 
       toolFour.each(function() { // Notice the .each() loop, discussed below
+        if ( $(this).children('span').length !== 0 ) {
           $(this).qtip({
               content: {
                   text: $(this).children('span') // Use the "div" element next to this for the content
               },
-              position: { adjust: { x: -700, y: -95 } },
+              position: { adjust: { x: -700, y: -75 } },
               style: {
                   classes: 'qtip-four'
               }
           });
+        }
       });
 
       toolFive.each(function() { // Notice the .each() loop, discussed below
+        if ( $(this).children('span').length !== 0 ) {
           $(this).qtip({
               content: {
                   text: $(this).children('span') // Use the "div" element next to this for the content
               },
-              position: { adjust: { x: -800, y: -95 } },
+              position: { adjust: { x: -800, y: -75 } },
               style: {
                   classes: 'qtip-five'
               }
           });
+        }
       });
 
-      // sticky navbar
-      $(function () {
-          $('.header').stickyNavbar({
-          activeClass: "active",          // Class to be added to highlight nav elements
-          sectionSelector: "scrollto",    // Class of the section that is interconnected with nav links
-          animDuration: 750,              // Duration of jQuery animation
-          startAt: 0,                     // Stick the menu at XXXpx from the top of the this() (nav container)
-          easing: "linear",               // Easing type if jqueryEffects = true, use jQuery Easing plugin to extend easing types - gsgd.co.uk/sandbox/jquery/easing
-          animateCSS: true,               // AnimateCSS effect on/off
-          animateCSSRepeat: false,        // Repeat animation everytime user scrolls
-          cssAnimation: "fadeInDown",     // AnimateCSS class that will be added to selector
-          jqueryEffects: false,           // jQuery animation on/off
-          jqueryAnim: "slideDown",        // jQuery animation type: fadeIn, show or slideDown
-          selector: "a",                  // Selector to which activeClass will be added, either "a" or "li"
-          mobile: true,                  // If false nav will not stick under 480px width of window
-          mobileWidth: 340,               // The viewport width (without scrollbar) under which stickyNavbar will not be applied (due usability on mobile devices)
-          zindex: 9999,                   // The zindex value to apply to the element: default 9999, other option is "auto"
-          stickyModeClass: "sticky-zz",      // Class that will be applied to 'this' in sticky mode
-          unstickyModeClass: "unsticky-zz"   // Class that will be applied to 'this' in non-sticky mode
-        });
-      });
+
 
 
       $(function() {
@@ -1169,8 +1166,10 @@
 
       $('.bxslider').bxSlider({
           slideWidth: 200,
+          startSlide: 0,
           minSlides: 5,
           maxSlides: 5,
+          infiniteLoop: false,
           slideMargin: 0,
           pagerType: 'short',
       });
@@ -1262,6 +1261,28 @@
           $('html, body').animate({
               scrollTop: $("#price").offset().top
           }, 2000);
+      });
+      $(".header").addClass('dark-header');
+            // sticky navbar
+      $(function () {
+          $('.header').stickyNavbar({
+          activeClass: "active",          // Class to be added to highlight nav elements
+          sectionSelector: "scrollto",    // Class of the section that is interconnected with nav links
+          animDuration: 750,              // Duration of jQuery animation
+          startAt: 0,                     // Stick the menu at XXXpx from the top of the this() (nav container)
+          easing: "linear",               // Easing type if jqueryEffects = true, use jQuery Easing plugin to extend easing types - gsgd.co.uk/sandbox/jquery/easing
+          animateCSS: true,               // AnimateCSS effect on/off
+          animateCSSRepeat: false,        // Repeat animation everytime user scrolls
+          cssAnimation: "fadeInDown",     // AnimateCSS class that will be added to selector
+          jqueryEffects: false,           // jQuery animation on/off
+          jqueryAnim: "slideDown",        // jQuery animation type: fadeIn, show or slideDown
+          selector: "a",                  // Selector to which activeClass will be added, either "a" or "li"
+          mobile: true,                  // If false nav will not stick under 480px width of window
+          mobileWidth: 320,               // The viewport width (without scrollbar) under which stickyNavbar will not be applied (due usability on mobile devices)
+          zindex: 9999,                   // The zindex value to apply to the element: default 9999, other option is "auto"
+          stickyModeClass: "sticky-zz",      // Class that will be applied to 'this' in sticky mode
+          unstickyModeClass: "unsticky-zz"   // Class that will be applied to 'this' in non-sticky mode
+        });
       });
     </script>
 
