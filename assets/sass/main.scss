@@ -3827,10 +3827,9 @@ html.swipebox-html.swipebox-touch {
 .speakers .bx-viewport {
   left: -5px;
 
-  -webkit-transform: translatez(0);
-      -ms-transform: translatez(0);
-       -o-transform: translatez(0);
-          transform: translatez(0);
+  height: auto !important;
+
+  transform: translatez(0);
 
   border: 0;
 }
